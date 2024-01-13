@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Adult Learning Laboratory" />
+    <meta name="author" content="All Team" />
+
+    <title>ALL Vietnam | App web</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Global Stylesheets -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/animate/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="p-4">
+      <div class="container mx-auto flex items-center">
+        <!-- Hình ảnh bên trái -->
+        <div>
+          <a href="#">
+            <img
+              style="height: 50px"
+              src="./img/navbar/logoAll.png"
+              alt="Logo"
+              class=""
+            />
+          </a>
+        </div>
+
+        <!-- Ô tìm kiếm bên phải -->
+        <div class="ml-auto">
+          <input
+            type="text"
+            placeholder="Tìm kiếm..."
+            class="border border-solid border-blue-500 text-search px-4 py-2 rounded"
+          />
+          <button class="bg-blue-500 text-white px-4 py-2 ml-2 rounded-md">
+            Tìm kiếm
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-gray-500 p-4">
+      <div class="container mx-auto flex gap-4 align-items-center">
+        <!-- ben trai -->
+        <div class="custom_select">
+          <div class="select-box">
+            <input type="text" class="tags_input" name="tags" hidden />
+            <div class="selected-options"></div>
+            <div class="arrow">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <div class="options">
+            <div class="option-search-tags">
+              <input
+                type="text"
+                class="search-tags"
+                placeholder="Tìm kiếm Comm Task đã dùng..."
+              />
+              <button type="button" class="clear">
+                <i class="fa fa-close"></i>
+              </button>
+            </div>
+            
+            <!-- <div class="option" data-value="Black">Black</div> 
+            <div class="option" data-value="Green">Green</div>
+            <div class="option" data-value="Blue">Blue</div>
+            <div class="option" data-value="Orange">Orange</div> -->
+            <!-- <div class="no-result-message" style ='display:none'>No result match</div> -->
+          </div>
+          <span class="tag_error_msg error" ></span>
+        </div>
+
+        <input
+          style="height: 100%"
+          type="button"
+          class="btn_submit bg-blue-500 text-white px-4 py-2 ml-2 rounded-md"
+          value="Pricing Caculation"
+        />
+      </div>
+    </header>
+
+    <section id="comp-offer">
+      <div id="comm_tasks" class="container"></div>
+    </section>
+    <!--Global JavaScript -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/wow/wow.min.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
