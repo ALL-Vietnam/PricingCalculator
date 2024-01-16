@@ -32,7 +32,7 @@
   </head>
   <body>
     <nav class="p-4">
-      <div class="container mx-auto flex items-center">
+      <div class="container mx-auto flex items-center justify-content-between">
         <!-- Hình ảnh bên trái -->
         <div>
           <a href="#">
@@ -42,63 +42,73 @@
               src="./img/navbar/logoAll.png"
               alt="Logo"
               class=""
-
             />
           </a>
         </div>
 
         <!-- Ô tìm kiếm bên phải -->
-        <div class="ml-auto">
+        <div class="flex">
+          <p class="px-2 py-2 ml-2 flex items-end">Tìm kiếm:</p>
           <input
             type="text"
-            placeholder="Tìm kiếm..."
-            class="border border-solid border-blue-500 text-search px-4 py-2 rounded"
+            placeholder="Communication Task..."
+            class="searchs_input border border-solid text-search px-2 py-2 rounded"
           />
-          <button class="bg-blue-500 text-white px-4 py-2 ml-2 rounded-md">
-            Tìm kiếm
-          </button>
         </div>
       </div>
     </nav>
 
     <header class="bg-gray-500 p-4">
-      <div class="container mx-auto flex gap-4 align-items-center">
+      <div
+        class="container mx-auto flex gap-4 align-items-center justify-content-between"
+      >
         <!-- ben trai -->
-        <div class="custom_select">
-          <div class="select-box">
-            <input type="text" class="tags_input" name="tags" hidden />
-            <div class="selected-options"></div>
-            <div class="arrow">
-              <i class="fa-solid fa-angle-down"></i>
+        <div class="d-flex align-items-center">
+          <div class="custom_select">
+            <div class="select-box">
+              <input type="text" class="tags_input" name="tags" hidden />
+              <div class="selected-options"></div>
+              <div class="arrow">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
             </div>
-          </div>
-          <div class="options">
-            <div class="option-search-tags">
-              <input
-                type="text"
-                class="search-tags"
-                placeholder="Tìm kiếm Comm Task đã dùng..."
-              />
-              <button type="button" class="clear">
-                <i class="fa fa-close"></i>
-              </button>
-            </div>
-            
-            <!-- <div class="option" data-value="Black">Black</div> 
-            <div class="option" data-value="Green">Green</div>
-            <div class="option" data-value="Blue">Blue</div>
-            <div class="option" data-value="Orange">Orange</div> -->
-            <!-- <div class="no-result-message" style ='display:none'>No result match</div> -->
-          </div>
-          <span class="tag_error_msg error" ></span>
-        </div>
+            <div class="options">
+              <div class="option-search-tags">
+                <input
+                  type="text"
+                  class="search-tags"
+                  placeholder="Tìm kiếm Comm Task đã dùng..."
+                />
+                <button type="button" class="clear">
+                  <i class="fa fa-close"></i>
+                </button>
+              </div>
 
-        <input
-          style="height: 100%"
-          type="button"
-          class="btn_submit bg-blue-500 text-white px-4 py-2 ml-2 rounded-md"
-          value="Pricing Caculation"
-        />
+              <!-- <div class="option" data-value="Black">Black</div> 
+              <div class="option" data-value="Green">Green</div>
+              <div class="option" data-value="Blue">Blue</div>
+              <div class="option" data-value="Orange">Orange</div> -->
+              <!-- <div class="no-result-message" style ='display:none'>No result match</div> -->
+            </div>
+            <span class="tag_error_msg error"></span>
+          </div>
+
+          <input
+            style="height: 100%"
+            type="button"
+            class="btn_submit bg-blue-500 text-white px-4 py-2 ml-2 rounded-md"
+            value="Pricing Caculation"
+          />
+        </div>
+        <div>
+          <select id="sortOrder" class="sortCommTask">
+            <option class="sortOption" value="alphabet">Xếp theo: A-Z</option>
+            <option class="sortOption" value="asc">Giá tăng dần | Full Range</option>
+            <option class="sortOption" value="desc">Giá giảm dần | Full Range</option>
+            <option class="sortOption" value="asc_Standard">Giá tăng dần | Standard</option>
+            <option class="sortOption" value="desc_Standard">Giá giảm dần | Standard</option>
+          </select>
+        </div>
       </div>
     </header>
 

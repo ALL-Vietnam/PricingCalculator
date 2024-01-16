@@ -42,7 +42,9 @@ p {
   }
 }
 
-
+.hide{
+  display: none;
+}
 .text-search {
   color: #64707b;
 }
@@ -232,4 +234,51 @@ p {
   }
 }
 
+
+/* CSS cho select với class sortCommTask */
+.sortCommTask {
+  padding: 4px; /* Khoảng cách giữa nội dung và viền */
+  border: 1px solid #ccc; /* Viền */
+  border-radius: 4px; /* Góc bo tròn */
+  outline: none; /* Loại bỏ viền focus (nếu có) */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+/* Hover effect */
+.sortCommTask:hover {
+  border-color: #666; /* Màu viền khi hover */
+  cursor: pointer;
+}
+
+/* Active effect (khi click vào) */
+.sortCommTask:active {
+  border-color: #555; /* Màu viền khi active */
+}
+
+/* Khi select có focus */
+.sortCommTask:focus {
+  border-color: #555; /* Màu viền khi focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+}
+
+/* Kiểu dạng nền, màu sắc chữ và mũi tên */
+.sortCommTask, .sortCommTask option {
+  background-color: #fff; /* Nền trắng */
+  color: #333; /* Màu chữ */
+}
+
+/* Mũi tên chỉ xuất hiện khi hover */
+.sortCommTask:hover::-ms-expand {
+  display: none;
+}
+
+.sortCommTask::-ms-expand {
+  display: none;
+}
+
+/* Loại bỏ kiểu dạng nền trắng mặc định trên Firefox */
+.sortCommTask:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
 

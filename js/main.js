@@ -406,13 +406,16 @@ insertCalculateCostStandard(data, prices);
 // Đặt nội dung cho phần tử mới
 var commTasksEl = document.getElementById("comm_tasks");
 var optionsEl = document.querySelector(".options");
-
+const emptyCommTask = () => {
+  commTasksEl.innerHTML = "";
+};
 const loadCommTasks = (data) => {
+  emptyCommTask();
   data.forEach(function (commTask) {
     idComm.push(commTask._id.$oid); // push id của commTask để làm id cho div 1 task
     // console.log(idComm, 'idcomm')
     // console.log(e)
-    var newCommTask = `<div id ='${commTask._id.$oid}' class="desc-comp-offer">
+    var newCommTask = `<div id ='${commTask._id.$oid}' class="desc-comp-offer ">
     <div class="row desc-comp-offer-cont-pro">
       <div class="col-md-5 col-sm-12">
         <img
@@ -447,17 +450,6 @@ const loadCommTasks = (data) => {
   });
 };
 loadCommTasks(data);
-
-// load option của thanh chọn CommTask đã dùng
-const loadOptions = (data) => {
-  data.forEach(function (commTask) {
-    var loadOption = `<div style="display: inline-block; 
-    margin: 4px; "
-    class="option" data-value="${commTask._id.$oid}">${commTask.name}</div>`;
-    optionsEl.innerHTML += loadOption;
-  });
-};
-loadOptions(data); // gọi lúc load trang lần đầu tiên
 
 const loadDetailCommTask = (commTask, dataOverlap, dataNotOverlap) => {
   [commTask] = commTask;
@@ -767,7 +759,11 @@ const loadDetailCommTask = (commTask, dataOverlap, dataNotOverlap) => {
       </div>
     </div>
     `;
-  if (dataNotOverlap.length !== 0 && dataOverlap.length !== 0 && dataOverlap[0].Skills.length !== 0) {
+  if (
+    dataNotOverlap.length !== 0 &&
+    dataOverlap.length !== 0 &&
+    dataOverlap[0].Skills.length !== 0
+  ) {
     // console.log(dataOverlap)
     [dataOverlap] = dataOverlap;
     [dataNotOverlap] = dataNotOverlap;
@@ -1383,10 +1379,6 @@ const loadDetailCommTask = (commTask, dataOverlap, dataNotOverlap) => {
   }
 };
 
-const emptyCommTask = () => {
-  commTasksEl.innerHTML = "";
-};
-
 const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
   const commTask = document.getElementById(`${id}`); // có 21 commTask được get làm Element
   if (commTask) {
@@ -1416,8 +1408,44 @@ for (let i = 0; i < idComm.length; i++) {
   addCommTaskListener(idComm[i], data, dataOverlap, dataNotOverlap);
 }
 
+///SEARCH
+const searchCommInput = document.querySelector(".searchs_input");
+
+searchCommInput.addEventListener("input", function () {
+  const searchComm = searchCommInput.value.toLowerCase();
+
+  data.forEach(function (commTask) {
+    const isVisible =
+      commTask.name.toLowerCase().includes(searchComm) ||
+      commTask.desc.toLowerCase().includes(searchComm);
+    const taskElement = document.getElementById(commTask._id.$oid); // Adjust the ID selector based on your HTML structure
+
+    if (taskElement) {
+      // Toggle the 'hide' class based on visibility
+      if (isVisible) {
+        taskElement.classList.remove("hide");
+      } else {
+        taskElement.classList.add("hide");
+      }
+    }
+  });
+});
+//SORT
+
+// CSS class definition for hiding elements
+
 // document.addEventListener("DOMContentLoaded", function () {
 // Mã JavaScript bạn muốn thực thi khi DOM đã sẵn sàng
+// load option của thanh chọn CommTask đã dùng
+const loadOptions = (data) => {
+  data.forEach(function (commTask) {
+    var loadOption = `<div style="display: inline-block; 
+    margin: 4px; "
+    class="option" data-value="${commTask._id.$oid}">${commTask.name}</div>`;
+    optionsEl.innerHTML += loadOption;
+  });
+};
+loadOptions(data); // gọi lúc load trang lần đầu tiên
 const customSelects = document.querySelectorAll(".custom_select");
 
 function updateSelectedOptions(customSelect) {
@@ -1439,7 +1467,7 @@ function updateSelectedOptions(customSelect) {
 
   let tagsHTML = "";
   if (selectedValues.length === 0) {
-    tagsHTML = '<span class="placeholder">Select Comm Task đã dùng....</span>';
+    tagsHTML = '<p class="placeholder">Lựa chọn Comm Task đã dùng....</p>';
   } else {
     const maxTagsToShow = 2;
     let additionalTagsCount = 0;
@@ -1477,6 +1505,8 @@ customSelects.forEach(function (customSelect) {
     const searchTerm = searchInput.value.toLowerCase();
     // console.log(searchTerm);
     options.forEach(function (option) {
+      console.log(option);
+
       const optionText = option.textContent.trim().toLocaleLowerCase();
       const shouldShow = optionText.includes(searchTerm);
       option.style.display = shouldShow ? "inline-block" : "none";
@@ -1553,7 +1583,6 @@ updateSelectedOptions(customSelects[0]);
 
 // nhấn tính tiền
 const btnPricingCalculation = document.querySelector(".btn_submit");
-// bắt đầu trong hàm click
 btnPricingCalculation.addEventListener("click", () => {
   // có thể dùng những biết toàn cục
   // sau khi bấm btn mới có value
@@ -1619,7 +1648,7 @@ btnPricingCalculation.addEventListener("click", () => {
     insertCountSkill(commTaskNotOverlap);
     insertCalculateCostFullRange(commTaskNotOverlap, prices);
     insertCalculateCostStandard(commTaskNotOverlap, prices);
-    if(commTaskNotOverlap[0].Skills.length !== 0){
+    if (commTaskNotOverlap[0].Skills.length !== 0) {
       dataNotOverlap.push(commTaskNotOverlap[0]);
     }
 
@@ -1647,15 +1676,42 @@ btnPricingCalculation.addEventListener("click", () => {
   idCommAfterSubmit = [];
 
   for (let i = 0; i < idComm.length; i++) {
-    addCommTaskListener(idComm[i], data, dataOverlap, dataNotOverlap);
+    addCommTaskListener(idComm[i], dataNotOverlap, dataOverlap, dataNotOverlap);
   }
 });
-document.addEventListener('DOMContentLoaded', function () {
+const sortOrderSelect = document.getElementById("sortOrder");
+
+sortOrderSelect.addEventListener("change", function () {
+  const sortOrder = sortOrderSelect.value;
+  const tasksToSort = dataNotOverlap.length !== 0 ? dataNotOverlap : data;
+
+  const sortedTasks = tasksToSort.slice().sort((a, b) => {
+    if (sortOrder === "alphabet") {
+      return a.name.localeCompare(b.name);
+    } else if (sortOrder === "asc") {
+      return a.costFullRange - b.costFullRange;
+    } else if (sortOrder === "desc") {
+      return b.costFullRange - a.costFullRange;
+    } else if (sortOrder === "asc_Standard") {
+      return a.costStandard - b.costStandard;
+    } else if (sortOrder === "desc_Standard") {
+      return b.costStandard - a.costStandard;
+    }
+  });
+
+  console.log(sortedTasks);
+  loadCommTasks(sortedTasks);
+  for (let i = 0; i < idComm.length; i++) {
+    addCommTaskListener(idComm[i], sortedTasks, dataOverlap, dataNotOverlap);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   // Get the logo element
-  const logo = document.getElementById('logo');
+  const logo = document.getElementById("logo");
 
   // Attach a click event listener to the logo
-  logo.addEventListener('click', function () {
+  logo.addEventListener("click", function () {
     // Reload the page
     location.reload();
   });
