@@ -4,8 +4,9 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021247"
     },
-    "name": "COMMUNICATION TASK 1",
-    "desc": "Communicating with Clients/Customers. | Giao tiếp với khách hàng/khách hàng.",
+    "name": "Communication task 1",
+    "desc_en": "Communicating with Clients/Customers.",
+    "desc_vi": "Giao tiếp với khách hàng.",
     "Skills": [
       {
         "_id": {
@@ -1055,8 +1056,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021248"
     },
-    "name": "COMMUNICATION TASK 2",
-    "desc": "Collaborating with Coworkers on Project. | Cộng tác với đồng nghiệp trong dự án.",
+    "name": "Communication task 2",
+    "desc_en": "Collaborating with Coworkers on Project.",
+    "desc_vi": "Cộng tác với đồng nghiệp trong dự án.",
+
     "Skills": [
       {
         "_id": {
@@ -2294,8 +2297,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021249"
     },
-    "name": "COMMUNICATION TASK 3",
-    "desc": "Collaborating with External Stakeholders/Partners. | Hợp tác với các bên liên quan/đối tác bên ngoài.",
+    "name": "Communication task 3",
+    "desc_en": "Collaborating with External Stakeholders/Partners.",
+    "desc_vi": "Hợp tác với các bên liên quan/đối tác bên ngoài.",
+
     "Skills": [
       {
         "_id": {
@@ -3708,8 +3713,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124a"
     },
-    "name": "COMMUNICATION TASK 4",
-    "desc": "Conducting meetings and presentations. | Tiến hành các cuộc họp và thuyết trình.",
+    "name": "Communication task 4",
+    "desc_en": "Conducting meetings and presentations.",
+    "desc_vi": "Tiến hành các cuộc họp và thuyết trình.",
+
     "Skills": [
       {
         "_id": {
@@ -4886,8 +4893,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124b"
     },
-    "name": "COMMUNICATION TASK 5",
-    "desc": "Sending and Responding to Email. | Gửi và trả lời email.",
+    "name": "Communication task 5",
+    "desc_en": "Sending and Responding to Email.",
+    "desc_vi": "Gửi và trả lời email.",
+
     "Skills": [
       {
         "_id": {
@@ -5406,8 +5415,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124c"
     },
-    "name": "COMMUNICATION TASK 6",
-    "desc": "Conduction Data Analysis and Reporting. | Phân tích và báo cáo dữ liệu dẫn truyền.",
+    "name": "Communication task 6",
+    "desc_en": "Conduction Data Analysis and Reporting.",
+    "desc_vi": "Phân tích và báo cáo dữ liệu dẫn truyền.",
+
     "Skills": [
       {
         "_id": {
@@ -5713,8 +5724,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124d"
     },
-    "name": "COMMUNICATION TASK 7",
-    "desc": "Creating and delivering presentations. | Tạo và trình bày bài thuyết trình.",
+    "name": "Communication task 7",
+    "desc_en": "Creating and delivering presentations.",
+    "desc_vi": "Tạo và trình bày bài thuyết trình.",
+
     "Skills": [
       {
         "_id": {
@@ -6722,8 +6735,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124e"
     },
-    "name": "COMMUNICATION TASK 8",
-    "desc": "Conducting negotiations with clients or vendors. | Tiến hành đàm phán với khách hàng hoặc nhà cung cấp.",
+    "name": "Communication task 8",
+    "desc_en": "Conducting negotiations with clients or vendors.",
+    "desc_vi": "Tiến hành đàm phán với khách hàng hoặc nhà cung cấp.",
+
     "Skills": [
       {
         "_id": {
@@ -7835,8 +7850,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124f"
     },
-    "name": "COMMUNICATION TASK 9",
-    "desc": "Delivering training sessions and workshops. | Cung cấp các buổi đào tạo và hội thảo.",
+    "name": "Communication task 9",
+    "desc_en": "Delivering training sessions and workshops.",
+    "desc_vi": "Cung cấp các buổi đào tạo và hội thảo.",
+
     "Skills": [
       {
         "_id": {
@@ -8727,8 +8744,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021250"
     },
-    "name": "COMMUNICATION TASK 10",
-    "desc": "Engaging in active listening during conversations. | Tích cực lắng nghe trong các cuộc trò chuyện.",
+    "name": "Communication task 10",
+    "desc_en": "Engaging in active listening during conversations.",
+    "desc_vi": "Tích cực lắng nghe trong các cuộc trò chuyện.",
+
     "Skills": [
       {
         "_id": {
@@ -9076,8 +9095,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021251"
     },
-    "name": "COMMUNICATION TASK 11",
-    "desc": "Participating in brainstorming sessions. | Tham gia các buổi brainstorming.",
+    "name": "Communication task 11",
+    "desc_en": "Participating in brainstorming sessions.",
+    "desc_vi": "Tham gia các buổi brainstorming.",
+
     "Skills": [
       {
         "_id": {
@@ -10037,8 +10058,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021252"
     },
-    "name": "COMMUNICATION TASK 12",
-    "desc": "Providing customer service and support. | Cung cấp dịch vụ và hỗ trợ khách hàng.",
+    "name": "Communication task 12",
+    "desc_en": "Providing customer service and support.",
+    "desc_vi": "Cung cấp dịch vụ và hỗ trợ khách hàng.",
+
     "Skills": [
       {
         "_id": {
@@ -10912,8 +10935,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021253"
     },
-    "name": "COMMUNICATION TASK 13",
-    "desc": "Conducting financial analysis and reporting. | Thực hiện phân tích và báo cáo tài chính.",
+    "name": "Communication task 13",
+    "desc_en": "Conducting financial analysis and reporting.",
+    "desc_vi": "Thực hiện phân tích và báo cáo tài chính.",
+
     "Skills": [
       {
         "_id": {
@@ -11219,8 +11244,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021254"
     },
-    "name": "COMMUNICATION TASK 14",
-    "desc": "Conduction interviews and hiring processes. | Tiến hành phỏng vấn và quy trình tuyển dụng.",
+    "name": "Communication task 14",
+    "desc_en": "Conduction interviews and hiring processes.",
+    "desc_vi": "Tiến hành phỏng vấn và quy trình tuyển dụng.",
+
     "Skills": [
       {
         "_id": {
@@ -12528,8 +12555,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021255"
     },
-    "name": "COMMUNICATION TASK 15",
-    "desc": "Conducting performance evaluations and providing feedback. | Tiến hành đánh giá hiệu suất và cung cấp phản hồi.",
+    "name": "Communication task 15",
+    "desc_en": "Conducting performance evaluations and providing feedback.",
+    "desc_vi": "Tiến hành đánh giá hiệu suất và cung cấp phản hồi.",
+
     "Skills": [
       {
         "_id": {
@@ -13953,8 +13982,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021256"
     },
-    "name": "COMMUNICATION TASK 16",
-    "desc": "Conducting quality control and assurance activities. | Thực hiện các hoạt động kiểm soát và đảm bảo chất lượng.",
+    "name": "Communication task 16",
+    "desc_en": "Conducting quality control and assurance activities.",
+    "desc_vi": "Thực hiện các hoạt động kiểm soát và đảm bảo chất lượng.",
+
     "Skills": [
       {
         "_id": {
@@ -15058,8 +15089,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021257"
     },
-    "name": "COMMUNICATION TASK 17",
-    "desc": "Conducting research and gathering information. | Tiến hành nghiên cứu và thu thập thông tin.",
+    "name": "Communication task 17",
+    "desc_en": "Conducting research and gathering information.",
+    "desc_vi": "Tiến hành nghiên cứu và thu thập thông tin.",
+
     "Skills": [
       {
         "_id": {
@@ -15645,8 +15678,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021258"
     },
-    "name": "COMMUNICATION TASK 18",
-    "desc": "Facilitating effective communication between team members. | Tạo điều kiện giao tiếp hiệu quả giữa các thành viên trong nhóm.",
+    "name": "Communication task 18",
+    "desc_en": "Facilitating effective communication between team members.",
+    "desc_vi": "Tạo điều kiện giao tiếp hiệu quả giữa các thành viên trong nhóm.",
+
     "Skills": [
       {
         "_id": {
@@ -16542,8 +16577,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021259"
     },
-    "name": "COMMUNICATION TASK 19",
-    "desc": "Participating in team-building activities. | Tham gia các hoạt động teambuilding.",
+    "name": "Communication task 19",
+    "desc_en": "Participating in team-building activities.",
+    "desc_vi": "Tham gia các hoạt động teambuilding.",
+
     "Skills": [
       {
         "_id": {
@@ -17458,8 +17495,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02125a"
     },
-    "name": "COMMUNICATION TASK 20",
-    "desc": "Writing and distributing internal communications, such as memos of newsletters. | Viết và phân phối các thông tin liên lạc nội bộ, chẳng hạn như bản ghi nhớ các bản tin.",
+    "name": "Communication task 20",
+    "desc_en": "Writing and distributing internal communications, such as memos of newsletters.",
+    "desc_vi": "Viết và phân phối các thông tin liên lạc nội bộ, chẳng hạn như bản ghi nhớ các bản tin.",
+
     "Skills": [
       {
         "_id": {
@@ -17639,8 +17678,10 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02125b"
     },
-    "name": "COMMUNICATION TASK 21",
-    "desc": "Writing and editing documents. | Viết và biên tập tài liệu.",
+    "name": "Communication task 21",
+    "desc_en": "Writing and editing documents.",
+    "desc_vi": "Viết và biên tập tài liệu.",
+
     "Skills": [
       {
         "_id": {
