@@ -60,14 +60,17 @@
 
     <header class="bg-gray-500 p-4">
       <div
-        class="container mx-auto flex gap-4 align-items-center justify-content-between"
+        class="container mx-auto flex flex-col sm:flex-row gap-4 justify-between"
       >
-        <!-- ben trai -->
-        <div class="d-flex align-items-center">
-          <div class="custom_select">
+        <!-- Phần bên trái -->
+        <div class="flex flex-col sm:flex-row sm:items-center">
+          <!-- Phần chọn tùy chọn -->
+          <div class="custom_select sm:mr-2">
             <div class="select-box">
-              <input type="text" class="tags_input" name="tags" hidden />
-              <div class="selected-options"></div>
+              <input type="text" class="tags_input" name="tags" hidden="" />
+              <div class="selected-options">
+                <!-- Các tag ở đây -->
+              </div>
               <div class="arrow">
                 <i class="fa-solid fa-angle-down"></i>
               </div>
@@ -83,25 +86,23 @@
                   <i class="fa fa-close"></i>
                 </button>
               </div>
-
-              <!-- <div class="option" data-value="Black">Black</div> 
-              <div class="option" data-value="Green">Green</div>
-              <div class="option" data-value="Blue">Blue</div>
-              <div class="option" data-value="Orange">Orange</div> -->
-              <!-- <div class="no-result-message" style ='display:none'>No result match</div> -->
+              <!-- Các option ở đây -->
             </div>
             <span class="tag_error_msg error"></span>
           </div>
 
+          <!-- Button Pricing Calculation -->
           <input
             style="height: 100%"
             type="button"
-            class="btn_submit bg-blue-500 text-white px-4 py-2 ml-2 rounded-md"
-            value="Pricing Caculation"
+            class="btn_submit bg-blue-500 text-white px-4 py-2 rounded-md sm:ml-auto w-auto"
+            value="Pricing Calculation"
           />
         </div>
-        <div>
-          <select id="sortOrder" class="sortCommTask">
+
+        <!-- Phần bên phải -->
+        <div class=" sm:mb-0">
+          <select id="sortOrder" class="sortCommTask px-2 py-2 sm:w-auto">
             <option class="sortOption" value="alphabet">Xếp theo: A-Z</option>
             <option class="sortOption" value="asc">
               Giá tăng dần | Full Range
@@ -117,6 +118,7 @@
             </option>
           </select>
         </div>
+        
       </div>
     </header>
 

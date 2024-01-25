@@ -48,14 +48,25 @@ p {
 .text-search {
   color: #64707b;
 }
-.btn_submit {
+/* .btn_submit {
   display: flex;
   align-items: flex-start;
+} */
+/* Các style cho button Pricing Calculation */
+.btn_submit {
+  height: 100%;
+  width: fit-content; /* Đặt chiều rộng dựa trên nội dung */
+}
+/* Media query chỉ áp dụng cho màn hình nhỏ hơn hoặc bằng 640px */
+@media screen and (max-width: 640px) {
+  .btn_submit {
+    margin-top: 8px; /* Đặt margin-top là 8px khi ở màn hình nhỏ */
+  }
 }
 
 .custom_select {
   position: relative;
-  width: 640px;
+  /* width: 640px; */
 }
 .select-box {
   background-color: #fff;
@@ -194,7 +205,6 @@ p {
 .img-center-block {
   display: block;
   margin: auto;
-
 }
 
 @media (max-width: 767px) {
@@ -288,9 +298,19 @@ p {
   gap: 40px;
   /* grid-auto-flow: dense; */
 }
-.item {
-  height: 100%;
+/* Media query cho màn hình md */
+@media screen and (max-width: 768px) {
+  #items {
+    grid-template-columns: repeat(2, 1fr); /* 1 cột cho màn hình md */
+    gap: 20px;
+  }
 }
+@media screen and (max-width: 576px) {
+  #items {
+    grid-template-columns: 1fr; /* 1 cột cho màn hình sm */
+  }
+}
+
 .descCommTask {
   display: flex;
   flex-direction: column;

@@ -1556,7 +1556,7 @@ function updateSelectedOptions(customSelect) {
   if (selectedValues.length === 0) {
     tagsHTML = '<p class="placeholder">Lựa chọn Comm Task đã dùng....</p>';
   } else {
-    const maxTagsToShow = 2;
+    const maxTagsToShow = 1;
     let additionalTagsCount = 0;
 
     selectionOptions.forEach(function (option, index) {
