@@ -57,6 +57,20 @@ p {
   height: 100%;
   width: fit-content; /* Đặt chiều rộng dựa trên nội dung */
 }
+.btn_submit {
+  background: #266b94;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* X, Y, độ mờ, màu bóng */
+  transition: background-color 0.3s ease; 
+}
+.btn_submit:hover {
+  background-color: #1a4e6e; /* Màu nền khi hover */
+}
+
+
+.btn_submit:active {
+  background-color: #133450; /* Màu nền khi click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ khi click */
+}
 /* Media query chỉ áp dụng cho màn hình nhỏ hơn hoặc bằng 640px */
 @media screen and (max-width: 640px) {
   .btn_submit {
@@ -70,7 +84,9 @@ p {
 }
 .select-box {
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #D9D9D9;
+  border-radius: .375rem ;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,6 +114,7 @@ p {
 }
 .arrow {
   margin: 0 10px;
+  ;
 }
 .fa-angle-down {
   color: #404040;
