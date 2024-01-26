@@ -1465,7 +1465,9 @@ const loadDetailCommTask = (commTask, dataOverlap, dataNotOverlap) => {
 };
 
 const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
+  
   const commTask = document.getElementById(`${id}`); // có 21 commTask được get làm Element
+  
   if (commTask) {
     // nếu Click vào cái Element CommTask tương ứng
     commTask.addEventListener("click", () => {
