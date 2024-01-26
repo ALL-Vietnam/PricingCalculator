@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Hind:400,600");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 /* General CSS */
 
@@ -7,36 +8,39 @@ body {
   height: 100%;
 }
 
-body {
-  font-family: "Hind", sans-serif;
-}
+/* body {
+  font-family: 'Noto Sans', sans-serif;
+} */
 
+body {
+  font-family: 'Inter', sans-serif;
+}
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #41464b;
 }
 
 a {
-  font-family: "Hind", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #2196f3;
 }
 
 p {
-  font-family: "Hind", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #64707b;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
 }
 
 @media (min-width: 1600px) {
   p {
-    font-family: "Hind", sans-serif;
+font-family: 'Inter', sans-serif;
     color: #64707b;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
   }
 }
@@ -59,11 +63,12 @@ p {
 }
 .btn_submit {
   background: #266b94;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* X, Y, độ mờ, màu bóng */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X, Y, độ mờ, màu bóng */
   transition: background-color 0.3s ease;
+  border: 1px solid #266b94;
 }
 .btn_submit:hover {
-  background-color: #1a4e6e; /* Màu nền khi hover */
+  border: 2px solid #64707B;
 }
 
 .btn_submit:active {
@@ -92,7 +97,14 @@ p {
   height: 48px;
   padding: 0 10px;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X, Y, độ mờ, màu bóng */
+
 }
+.select-box:hover {
+  border: 1px solid #64707B;
+
+}
+
 .selected-options {
   display: flex;
   flex-wrap: wrap;
@@ -204,13 +216,13 @@ p {
 
 .desc-comp-offer-cont-pro h3 {
   padding: 20px 10px 0 10px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: none;
 }
 
 .desc-comp-offer-cont-pro p {
   padding: 4px 10px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .desc-comp-offer-cont-pro a {
@@ -261,7 +273,9 @@ p {
   border: 1px solid #ccc; /* Viền */
   border-radius: 4px; /* Góc bo tròn */
   outline: none; /* Loại bỏ viền focus (nếu có) */
-  font-size: 16px; /* Kích thước chữ */
+  font-size: 14px; /* Kích thước chữ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X, Y, độ mờ, màu bóng */
+  margin: auto;
 }
 
 /* Hover effect */
@@ -286,6 +300,7 @@ p {
 .sortCommTask option {
   background-color: #fff; /* Nền trắng */
   color: #333; /* Màu chữ */
+  
 }
 
 /* Mũi tên chỉ xuất hiện khi hover */
@@ -313,14 +328,20 @@ p {
   gap: 40px;
   /* grid-auto-flow: dense; */
 }
-/* Media query cho màn hình md */
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
   #items {
-    grid-template-columns: repeat(2, 1fr); /* 1 cột cho màn hình md */
+    grid-template-columns: repeat(2, 1fr); /* 2 cột cho màn hình md */
     gap: 20px;
   }
 }
-@media screen and (max-width: 576px) {
+/* Media query cho màn hình md */
+@media (max-width: 768px) {
+  #items {
+    grid-template-columns: repeat(1, 1fr); /* 2 cột cho màn hình md */
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
   #items {
     grid-template-columns: 1fr; /* 1 cột cho màn hình sm */
   }
@@ -330,6 +351,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 .nameComm {
   background-color: #266b94;
@@ -341,8 +364,9 @@ p {
   border-radius: 20px 20px 0 0;
 }
 .nameComm p {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
+  font-weight: bold;
 }
 .descCommTask {
   padding: 20px;
@@ -353,18 +377,22 @@ p {
 .descCommTaskEN {
   color: #266b94 !important;
   margin-bottom: 12px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 20px;
   font-size: 14px;
   height: 30px;
+
+
 }
 
 .descCommTaskVN {
   margin-bottom: 12px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 20px;
   font-size: 14px;
   height: 30px;
+
+
 }
 
 .descBlock {
@@ -386,7 +414,7 @@ p {
   border-radius: 12px;
   font-weight: bold;
   color: #266b94;
-  font-size: 15px;
+  font-size: 13px;
 }
 .descNameTotal,
 .descNameStandard,
@@ -400,10 +428,10 @@ p {
 }
 
 .priceStandard {
-  width: 45%;
+  width: 48%;
 }
 .priceFullRange {
-  width: 55%;
+  width: 52%;
 }
 
 .btnDetail {
@@ -451,12 +479,13 @@ p {
     -ms-flex: 0 0 95%;
     flex: 0 0 95%;
     max-width: 95% !important;
+    
   }
 }
 
 @media (min-width: 1600px) {
   #items p {
     padding: 0 10px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }

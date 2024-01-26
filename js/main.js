@@ -484,11 +484,11 @@ const loadCommTasks_v2 = (data) => {
     idComm.push(commTask._id.$oid); // push id của commTask để làm id cho div 1 task
     // console.log(idComm, 'idcomm')
     // console.log(e)
-    var newCommTask = `<div id ='${commTask._id.$oid}' class="item">
+    var newCommTask = `<div id ='${commTask._id.$oid}' class="item" >
     <div class="nameComm">
       <p>${commTask.name}</p>
     </div>
-    <div class="descCommTask">
+    <div style="" class="descCommTask">
       <div class="descDetail">
         <p class="descCommTaskEN">
         ${commTask.desc_en}
@@ -1529,7 +1529,7 @@ searchCommInput.addEventListener("input", function () {
 const loadOptions = (data) => {
   data.forEach(function (commTask) {
     var loadOption = `<div style="display: inline-block; 
-    margin: 4px; "
+    margin: 4px; font-size: 14px"
     class="option" data-value="${commTask._id.$oid}">${commTask.name}</div>`;
     optionsEl.innerHTML += loadOption;
   });
@@ -1556,14 +1556,14 @@ function updateSelectedOptions(customSelect) {
 
   let tagsHTML = "";
   if (selectedValues.length === 0) {
-    tagsHTML = '<p class="placeholder">Lựa chọn Comm Task đã dùng....</p>';
+    tagsHTML = '<p style="font-size: 14px"; class="placeholder">Lựa chọn Comm Task đã dùng....</p>';
   } else {
     const maxTagsToShow = 1;
     let additionalTagsCount = 0;
 
     selectionOptions.forEach(function (option, index) {
       if (index < maxTagsToShow) {
-        tagsHTML += `<span class="tag">${option.text} <span class="remove-tag" data-value = "${option.value}">&times;</span></span
+        tagsHTML += `<span style="font-size: 14px"; class="tag">${option.text} <span class="remove-tag" data-value = "${option.value}">&times;</span></span
             >`;
       } else {
         additionalTagsCount++;
