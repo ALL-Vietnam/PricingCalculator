@@ -69,6 +69,7 @@
         <!-- Phần bên trái -->
         <div class="flex flex-col sm:flex-row sm:items-center">
           <!-- Phần chọn tùy chọn -->
+          <!-- Full Range -->
           <div class="custom_select sm:mr-2">
             <div class="select-box">
               <input type="text" class="tags_input" name="tags" hidden="" />
@@ -92,9 +93,33 @@
               </div>
               <!-- Các option ở đây -->
             </div>
-            <span class="tag_error_msg error"></span>
           </div>
-          
+          <!-- /////////////////////////////// -->
+          <!-- Standard -->
+          <div class="custom_select_standard sm:mr-2">
+            <div class="select-box_standard">
+              <input type="text" class="tags_input_standard" name="tags" hidden="" />
+              <div class="selected-options_standard">
+                <!-- Các tag ở đây -->
+              </div>
+              <div class="arrow">
+                <i style="color: #64707b" class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+            <div class="options_standard">
+              <div class="option-search-tags_standard">
+                <input
+                  type="text"
+                  class="search-tags_standard"
+                  placeholder="Tìm Comm Task Standard"
+                />
+                <button type="button" class="clear">
+                  <i class="fa fa-close"></i>
+                </button>
+              </div>
+              <!-- Các option ở đây -->
+            </div>
+          </div>
 
           <!-- Button Pricing Calculation -->
           <input

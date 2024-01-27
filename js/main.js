@@ -11,6 +11,7 @@ const prices = {
 let idComm = [];
 let idCommOverlap = [];
 let arrayIDCommTaskUsed;
+let arrayCommTaskStandardUsed;
 let idSet;
 let arrIDSkillCommUsed;
 
@@ -407,8 +408,6 @@ insertCalculateCostStandard(data, prices);
 var commTasksEl = document.getElementById("comm_tasks");
 // var commTasksElv2 = document.getElementById("items");
 
-var optionsEl = document.querySelector(".options");
-
 const emptyCommTask = () => {
   commTasksEl.innerHTML = "";
 };
@@ -436,7 +435,9 @@ const loadCommTasks = (data) => {
             />
           </div>
           <div style="padding: 20px 0;" class="col-md-7 col-sm-12">
-            <h3 style="padding:0" class="name-CommTask"><b>${commTask.name}</b></h3>
+            <h3 style="padding:0" class="name-CommTask"><b>${
+              commTask.name
+            }</b></h3>
             <div class="detailComm">
               <p class="detailCommEN">${commTask.desc_en}</p>
               <p class="descCommVN">${commTask.desc_vi}</p>
@@ -1465,9 +1466,8 @@ const loadDetailCommTask = (commTask, dataOverlap, dataNotOverlap) => {
 };
 
 const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
-  
   const commTask = document.getElementById(`${id}`); // có 21 commTask được get làm Element
-  
+
   if (commTask) {
     // nếu Click vào cái Element CommTask tương ứng
     commTask.addEventListener("click", () => {
@@ -1506,7 +1506,7 @@ searchCommInput.addEventListener("input", function () {
       commTask.name.toLowerCase().includes(searchComm) ||
       commTask.desc_en.toLowerCase().includes(searchComm) ||
       commTask.desc_vi.toLowerCase().includes(searchComm);
-      
+
     const taskElement = document.getElementById(commTask._id.$oid); // Adjust the ID selector based on your HTML structure
 
     if (taskElement) {
@@ -1519,13 +1519,15 @@ searchCommInput.addEventListener("input", function () {
     }
   });
 });
-//SORT
 
 // CSS class definition for hiding elements
 
 // document.addEventListener("DOMContentLoaded", function () {
 // Mã JavaScript bạn muốn thực thi khi DOM đã sẵn sàng
 // load option của thanh chọn CommTask đã dùng
+
+// Select Full Range
+var optionsEl = document.querySelector(".options");
 const loadOptions = (data) => {
   data.forEach(function (commTask) {
     var loadOption = `<div style="display: inline-block; 
@@ -1534,9 +1536,9 @@ const loadOptions = (data) => {
     optionsEl.innerHTML += loadOption;
   });
 };
-loadOptions(data); // gọi lúc load trang lần đầu tiên
-const customSelects = document.querySelectorAll(".custom_select");
+loadOptions(data); // gọi khi load trang lần đầu tiên
 
+const customSelects = document.querySelectorAll(".custom_select");
 function updateSelectedOptions(customSelect) {
   const selectionOptions = Array.from(
     customSelect.querySelectorAll(".option.active")
@@ -1556,15 +1558,15 @@ function updateSelectedOptions(customSelect) {
 
   let tagsHTML = "";
   if (selectedValues.length === 0) {
-    tagsHTML = '<p style="font-size: 14px"; class="placeholder">Lựa chọn Comm Task đã dùng....</p>';
+    tagsHTML =
+      '<p style="font-size: 14px" class="placeholder">Lựa chọn Comm Task đã dùng....</p>';
   } else {
     const maxTagsToShow = 1;
     let additionalTagsCount = 0;
 
     selectionOptions.forEach(function (option, index) {
       if (index < maxTagsToShow) {
-        tagsHTML += `<span style="font-size: 14px"; class="tag">${option.text} <span class="remove-tag" data-value = "${option.value}">&times;</span></span
-            >`;
+        tagsHTML += `<span style="font-size: 14px" class="tag">${option.text} <span class="remove-tag" data-value="${option.value}">&times;</span></span>`;
       } else {
         additionalTagsCount++;
       }
@@ -1596,7 +1598,7 @@ customSelects.forEach(function (customSelect) {
     options.forEach(function (option) {
       console.log(option);
 
-      const optionText = option.textContent.trim().toLocaleLowerCase();
+      const optionText = option.textContent.trim().toLowerCase();
       const shouldShow = optionText.includes(searchTerm);
       option.style.display = shouldShow ? "inline-block" : "none";
     });
@@ -1638,7 +1640,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
-//click selectbox thi open list selection
+// click select box thì mở list selection
 const selectBoxes = document.querySelectorAll(".select-box");
 selectBoxes.forEach(function (selectBox) {
   selectBox.addEventListener("click", function (e) {
@@ -1647,7 +1649,7 @@ selectBoxes.forEach(function (selectBox) {
     }
   });
 });
-// bam ra ngoai thi tat list select
+// bấm ra ngoài thì tắt list select
 document.addEventListener("click", function (e) {
   if (
     !e.target.closest(".custom_select") &&
@@ -1658,17 +1660,150 @@ document.addEventListener("click", function (e) {
     });
   }
 });
-
-function resetCustomSelects() {
-  customSelects.forEach(function (customSelect) {
-    customSelects.querySelectorAll(".option.active").forEach(function (option) {
-      option.classList.remove("active");
-    });
-    customSelect.querySelector(".option").classList.remove(".active");
-    updateSelectedOptions(customSelect);
-  });
-}
 updateSelectedOptions(customSelects[0]);
+
+// Select Standard /////////////////////////////////////
+var optionsStandardEl = document.querySelector(".options_standard");
+const loadStandardOptions = (data) => {
+  data.forEach(function (commTask) {
+    var loadStandardOption = `<div style="display: inline-block; 
+    margin: 4px; font-size: 14px"
+    class="option_standard" data-value_standard="${commTask._id.$oid}">${commTask.name}</div>`;
+    optionsStandardEl.innerHTML += loadStandardOption;
+  });
+};
+loadStandardOptions(data); // gọi khi load trang lần đầu tiên
+
+const customSelectsStandard = document.querySelectorAll(
+  ".custom_select_standard"
+);
+function updateSelectedOptionsStandard(customSelect) {
+  const selectionOptionsStandard = Array.from(
+    customSelect.querySelectorAll(".option_standard.active")
+  ).map(function (option) {
+    return {
+      value: option.getAttribute("data-value_standard"),
+      text: option.textContent.trim(),
+    };
+  });
+
+  const selectedValuesStandard = selectionOptionsStandard.map(function (
+    option
+  ) {
+    // console.log(option.value);
+    return option.value;
+  });
+  // console.log(selectedValues);
+  customSelect.querySelector(".tags_input_standard").value =
+    selectedValuesStandard.join(", ");
+
+  let tagsHTML = "";
+  if (selectedValuesStandard.length === 0) {
+    tagsHTML =
+      '<p style="font-size: 14px" class="placeholder">Comm Task Standard </p>';
+  } else {
+    const maxTagsToShow = 1;
+    let additionalTagsCount = 0;
+
+    selectionOptionsStandard.forEach(function (option, index) {
+      if (index < maxTagsToShow) {
+        tagsHTML += `<span style="font-size: 14px" class="tag">${option.text} <span class="remove-tag" data-value="${option.value}">&times;</span></span>`;
+      } else {
+        additionalTagsCount++;
+      }
+    });
+    if (additionalTagsCount > 0) {
+      tagsHTML += `<span class="tag">+${additionalTagsCount}</span>`;
+    }
+  }
+  customSelect.querySelector(".selected-options_standard").innerHTML = tagsHTML;
+}
+
+customSelectsStandard.forEach(function (customSelect) {
+  const searchInputStandard = customSelect.querySelector(
+    ".search-tags_standard"
+  );
+  const optionsContainerStandard =
+    customSelect.querySelector(".options_standard");
+  const optionsStandard = customSelect.querySelectorAll(".option_standard");
+  const clearButton = customSelect.querySelector(".clear");
+
+  clearButton.addEventListener("click", function () {
+    searchInputStandard.value = "";
+    optionsStandard.forEach(function (option) {
+      option.style.display = "inline-block";
+    });
+  });
+
+  searchInputStandard.addEventListener("input", function () {
+    const searchTermStandard = searchInputStandard.value.toLowerCase();
+    // console.log(searchTermStandard);
+    optionsStandard.forEach(function (option) {
+      console.log(option);
+
+      const optionTextStandard = option.textContent.trim().toLowerCase();
+      const shouldShowStandard =
+        optionTextStandard.includes(searchTermStandard);
+      option.style.display = shouldShowStandard ? "inline-block" : "none";
+    });
+
+    if (searchTermStandard) {
+      optionsContainerStandard.classList.add("option-search-active");
+    } else {
+      optionsContainerStandard.classList.remove("option-search-active");
+    }
+  });
+});
+
+customSelectsStandard.forEach(function (customSelect) {
+  const optionsStandard = customSelect.querySelectorAll(".option_standard");
+  optionsStandard.forEach(function (option) {
+    option.addEventListener("click", function () {
+      option.classList.toggle("active");
+      updateSelectedOptionsStandard(customSelect);
+    });
+  });
+});
+
+document.addEventListener("click", function (e) {
+  const removeTag = e.target.closest(".remove-tag");
+  // console.log(removeTag, "f");
+  if (removeTag) {
+    const customSelect = removeTag.closest(".custom_select_standard");
+    // console.log(customSelect, " a");
+    const valueToRemove = removeTag.getAttribute("data-value_standard");
+    const escapedValue = CSS.escape(valueToRemove);
+
+    const optionToRemove = customSelect.querySelector(
+      `.option_standard[data-value_standard="${escapedValue}"]`
+    );
+    // console.log(optionToRemove, "c");
+    optionToRemove.classList.remove("active");
+
+    updateSelectedOptionsStandard(customSelect);
+  }
+});
+
+const selectBoxesStandard = document.querySelectorAll(".select-box_standard");
+selectBoxesStandard.forEach(function (selectBox) {
+  selectBox.addEventListener("click", function (e) {
+    if (!e.target.closest(".tag")) {
+      selectBox.parentNode.classList.toggle("open");
+    }
+  });
+});
+
+document.addEventListener("click", function (e) {
+  if (
+    !e.target.closest(".custom_select_standard") &&
+    !e.target.classList.contains("remove-tag")
+  ) {
+    customSelectsStandard.forEach(function (customSelect) {
+      customSelect.classList.remove("open");
+    });
+  }
+});
+updateSelectedOptionsStandard(customSelectsStandard[0]);
 
 // nhấn tính tiền
 const btnPricingCalculation = document.querySelector(".btn_submit");
@@ -1676,19 +1811,47 @@ btnPricingCalculation.addEventListener("click", () => {
   // có thể dùng những biết toàn cục
   // sau khi bấm btn mới có value
   const tags = document.querySelector(".tags_input").value;
+  console.log(tags, "Full Range");
+
+  const tagsStandard = document.querySelector(".tags_input_standard").value;
+
+  const idSet = new Set(); // typeof object, lưu trữ những giá trị duy nhất không trùng lặp
+  //Standard/////////////////////
+  arrayCommTaskStandardUsed = tagsStandard.split(", ");
+  const commTasksStandardUsed = data.filter(function (commTask) {
+    // console.log(arrayIDCommTaskUsed)
+    return arrayCommTaskStandardUsed.includes(commTask._id.$oid);
+  });
+  commTasksStandardUsed.forEach(function (commTask) {
+    commTask.Skills.forEach(function (skill) {
+      // idSet.add(skill._id.$oid); // typeof object
+    });
+  });
+
+  commTasksStandardUsed.forEach((commTask) => {
+    // Lọc ra các kỹ năng không chứa 'C1' hoặc 'C2' theo điều kiện
+    commTask.Skills = commTask.Skills.filter(
+      (skill) => !skill.id.includes("C1") && !skill.id.includes("C2")
+    );
+  });
+
+
+  // Hiển thị đối tượng sau khi loại bỏ
+
+  // Full Range -------------------------
   // string to array
   // array arrayIDCommTaskUsed chưa CommTask
   arrayIDCommTaskUsed = tags.split(", ");
 
   // arrayDataCommTaskUsed là mảng đối tượng  các commTask đã dùng
-  const commTasksUsed = data.filter(function (commTask) {
+  const commTasksFullRangeUsed = data.filter(function (commTask) {
     // console.log(arrayIDCommTaskUsed)
     return arrayIDCommTaskUsed.includes(commTask._id.$oid);
   });
-
-  const idSet = new Set(); // typeof object, lưu trữ những giá trị duy nhất không trùng lặp
+  const commTasksUsed = commTasksFullRangeUsed.concat(commTasksStandardUsed);
   // truy cập vào commTask và lấy ra bộ idSkill tương ứng với từng commTask
   commTasksUsed.forEach(function (commTask) {
+    console.log(commTask)
     commTask.Skills.forEach(function (skill) {
       idSet.add(skill._id.$oid); // typeof object
     });
@@ -1738,9 +1901,12 @@ btnPricingCalculation.addEventListener("click", () => {
     insertCountSkill(commTaskNotOverlap);
     insertCalculateCostFullRange(commTaskNotOverlap, prices);
     insertCalculateCostStandard(commTaskNotOverlap, prices);
+    console.log(commTaskNotOverlap)
     if (commTaskNotOverlap[0].Skills.length !== 0) {
       dataNotOverlap.push(commTaskNotOverlap[0]);
     }
+    // dataNotOverlap.push(commTaskNotOverlap[0]);
+
 
     const commTaskOverlap = [commTaskSubSkill].map((task) => {
       const filteredSkills = task.Skills.filter((skill) =>
@@ -1773,6 +1939,7 @@ const sortOrderSelect = document.getElementById("sortOrder");
 
 sortOrderSelect.addEventListener("change", function () {
   const sortOrder = sortOrderSelect.value;
+
   const tasksToSort = dataNotOverlap.length !== 0 ? dataNotOverlap : data;
 
   const sortedTasks = tasksToSort.slice().sort((a, b) => {
