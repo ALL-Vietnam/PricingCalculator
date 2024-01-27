@@ -1835,7 +1835,6 @@ btnPricingCalculation.addEventListener("click", () => {
     );
   });
 
-
   // Hiển thị đối tượng sau khi loại bỏ
 
   // Full Range -------------------------
@@ -1851,7 +1850,7 @@ btnPricingCalculation.addEventListener("click", () => {
   const commTasksUsed = commTasksFullRangeUsed.concat(commTasksStandardUsed);
   // truy cập vào commTask và lấy ra bộ idSkill tương ứng với từng commTask
   commTasksUsed.forEach(function (commTask) {
-    console.log(commTask)
+    console.log(commTask);
     commTask.Skills.forEach(function (skill) {
       idSet.add(skill._id.$oid); // typeof object
     });
@@ -1898,15 +1897,15 @@ btnPricingCalculation.addEventListener("click", () => {
         Skills: filteredSkills,
       };
     });
+
     insertCountSkill(commTaskNotOverlap);
     insertCalculateCostFullRange(commTaskNotOverlap, prices);
     insertCalculateCostStandard(commTaskNotOverlap, prices);
-    console.log(commTaskNotOverlap)
+    console.log(commTaskNotOverlap);
     if (commTaskNotOverlap[0].Skills.length !== 0) {
       dataNotOverlap.push(commTaskNotOverlap[0]);
     }
     // dataNotOverlap.push(commTaskNotOverlap[0]);
-
 
     const commTaskOverlap = [commTaskSubSkill].map((task) => {
       const filteredSkills = task.Skills.filter((skill) =>
