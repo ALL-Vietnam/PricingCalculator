@@ -416,7 +416,6 @@ const emptyCommTask = () => {
 // };
 const loadCommTasks = (data) => {
   emptyCommTask();
-  console.log(commTasksEl, "h");
 
   data.forEach(function (commTask) {
     idComm.push(commTask._id.$oid); // push id của commTask để làm id cho div 1 task
@@ -486,49 +485,52 @@ const loadCommTasks_v2 = (data) => {
     // console.log(idComm, 'idcomm')
     // console.log(e)
     var newCommTask = `<div id ='${commTask._id.$oid}' class="item" >
-    <div class="nameComm">
-      <p>${commTask.name}</p>
-    </div>
-    <div style="" class="descCommTask">
-      <div class="descDetail">
-        <p class="descCommTaskEN">
-        ${commTask.desc_en}
-        </p>
-        <p class="descCommTaskVN">
-        ${commTask.desc_vi}
-        </p>
+    <div class= "itemCommTask">
+      <div class="nameComm">
+        <p>${commTask.name}</p>
       </div>
-      <div class="descDetailBelow">
-        <div class="descBlock">
-          <div class="totalSkill">
-            <p class="descNameTotal">Total</p>
-            <div class="descTotalSkill">${commTask.Skills.length} skills</div>
-          </div>
-
-          <div class="price">
-            <div class="priceStandard">
-              <p class="descNameStandard">Standard</p>
-              <div class="descStandardSkill">
-              ${commTask.costStandard
-                .toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ".")} đ
-              </div>
-            </div>
-
-            <div class="priceFullRange">
-              <p class="descNameFullRange">Full Range</p>
-              <div class="descFullRangeSkill">
-              ${commTask.costFullRange
-                .toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ".")} đ
-              </div>
-            </div>
-          </div>
+      <div style="" class="descCommTask">
+        <div class="descDetail">
+          <p class="descCommTaskEN">
+          ${commTask.desc_en}
+          </p>
+          <p class="descCommTaskVN">
+          ${commTask.desc_vi}
+          </p>
         </div>
+        <div class="descDetailBelow">
+          <div class="descBlock">
+            <div class="totalSkill">
+              <p class="descNameTotal">Total</p>
+              <div class="descTotalSkill">${commTask.Skills.length} skills</div>
+            </div>
 
-        <button class="btnDetail">Detail</button>
+            <div class="price">
+              <div class="priceStandard">
+                <p class="descNameStandard">Standard</p>
+                <div class="descStandardSkill">
+                ${commTask.costStandard
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ".")} đ
+                </div>
+              </div>
+
+              <div class="priceFullRange">
+                <p class="descNameFullRange">Full Range</p>
+                <div class="descFullRangeSkill">
+                ${commTask.costFullRange
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ".")} đ
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btnDetail">Detail</button>
+        </div>
       </div>
     </div>
+
   </div>`;
 
     // Thêm phần tử mới vào container
@@ -1470,22 +1472,34 @@ const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
 
   if (commTask) {
     // nếu Click vào cái Element CommTask tương ứng
-    commTask.addEventListener("click", () => {
-      emptyCommTask(); // Xóa hết cái CommTask đã load trong data
-      // chọn ra từ data lớn có commTask id tương ứng với id click chỉ có duy nhất 1 phần tử
-      // filteredTasks là 1 mảng chứa 1 đối tượng commTask ví trí 0
-      const commTaskClicked = data.filter(
-        (commTask) => commTask._id.$oid === `${id}`
-      );
-      const commTaskOverlap = dataOverlap.filter(
-        (commTask) => commTask._id.$oid === `${id}`
-      );
-      const commTaskNotOverlap = dataNotOverlap.filter(
-        (commTask) => commTask._id.$oid === `${id}`
-      );
-      loadCommTasks(commTaskClicked);
-      loadDetailCommTask(commTaskClicked, commTaskOverlap, commTaskNotOverlap);
-    });
+    const detailButton = commTask.querySelector(".btnDetail");
+    if (detailButton) {
+      // Nếu tìm thấy nút "Detail"
+      detailButton.addEventListener("click", (event) => {
+        event.stopPropagation(); // Ngăn chặn sự kiện click lan ra các phần tử cha
+
+        // Thực hiện các hành động khi nút "Detail" được bấm
+        console.log(`Clicked Detail button for commTask with ID: ${id}`);
+        emptyCommTask(); // Xóa hết cái CommTask đã load trong data
+        // chọn ra từ data lớn có commTask id tương ứng với id click chỉ có duy nhất 1 phần tử
+        // filteredTasks là 1 mảng chứa 1 đối tượng commTask ví trí 0
+        const commTaskClicked = data.filter(
+          (commTask) => commTask._id.$oid === `${id}`
+        );
+        const commTaskOverlap = dataOverlap.filter(
+          (commTask) => commTask._id.$oid === `${id}`
+        );
+        const commTaskNotOverlap = dataNotOverlap.filter(
+          (commTask) => commTask._id.$oid === `${id}`
+        );
+        loadCommTasks(commTaskClicked);
+        loadDetailCommTask(
+          commTaskClicked,
+          commTaskOverlap,
+          commTaskNotOverlap
+        );
+      });
+    }
   }
 };
 
@@ -1807,11 +1821,11 @@ updateSelectedOptionsStandard(customSelectsStandard[0]);
 
 // nhấn tính tiền
 const btnPricingCalculation = document.querySelector(".btn_submit");
+commTaskSubSkill = data; // mảng đối tượng CommTask mới sẽ thêm các thông tin skill trùng
 btnPricingCalculation.addEventListener("click", () => {
   // có thể dùng những biết toàn cục
   // sau khi bấm btn mới có value
   const tags = document.querySelector(".tags_input").value;
-  console.log(tags, "Full Range");
 
   const tagsStandard = document.querySelector(".tags_input_standard").value;
 
@@ -1822,17 +1836,15 @@ btnPricingCalculation.addEventListener("click", () => {
     // console.log(arrayIDCommTaskUsed)
     return arrayCommTaskStandardUsed.includes(commTask._id.$oid);
   });
-  commTasksStandardUsed.forEach(function (commTask) {
-    commTask.Skills.forEach(function (skill) {
-      // idSet.add(skill._id.$oid); // typeof object
-    });
-  });
 
-  commTasksStandardUsed.forEach((commTask) => {
-    // Lọc ra các kỹ năng không chứa 'C1' hoặc 'C2' theo điều kiện
-    commTask.Skills = commTask.Skills.filter(
-      (skill) => !skill.id.includes("C1") && !skill.id.includes("C2")
-    );
+  const commTaskSkillStandard = commTasksStandardUsed.map((commTask) => {
+    // Tạo ra một bản sao của commTask với Skills được lọc
+    return {
+      ...commTask,
+      Skills: commTask.Skills.filter(
+        (skill) => !skill.id.includes("C1") && !skill.id.includes("C2")
+      ),
+    };
   });
 
   // Hiển thị đối tượng sau khi loại bỏ
@@ -1847,10 +1859,10 @@ btnPricingCalculation.addEventListener("click", () => {
     // console.log(arrayIDCommTaskUsed)
     return arrayIDCommTaskUsed.includes(commTask._id.$oid);
   });
-  const commTasksUsed = commTasksFullRangeUsed.concat(commTasksStandardUsed);
+
+  const commTasksUsed = commTasksFullRangeUsed.concat(commTaskSkillStandard);
   // truy cập vào commTask và lấy ra bộ idSkill tương ứng với từng commTask
   commTasksUsed.forEach(function (commTask) {
-    console.log(commTask);
     commTask.Skills.forEach(function (skill) {
       idSet.add(skill._id.$oid); // typeof object
     });
@@ -1862,7 +1874,6 @@ btnPricingCalculation.addEventListener("click", () => {
   const arrIDSkillCommUsed = Array.from(idSet); // object => array
   // console.log(arrIDSkillCommUsed);
 
-  commTaskSubSkill = data; // mảng đối tượng CommTask mới sẽ thêm các thông tin skill trùng
 
   let arrSkillsCommTask = [];
   let arrSkillCommTaskNew = []; // array id Skill không trùng của CommTask mới => sẽ tính tiền
@@ -1874,16 +1885,21 @@ btnPricingCalculation.addEventListener("click", () => {
     arrSkillsCommTask = [];
     arrSkillCommTaskNew = [];
     arrSkillOverlapCommTaskNew = [];
-    // từng commTask trong commTaskSubSkill truy cập vào Skills để lấy array ID Skill
 
+    // arrSkillsCommTask mảng id skill từng commTask trong
+    //commTaskSubSkill truy cập vào Skills để lấy array ID Skill
     commTaskSubSkill.Skills.forEach(function (skill) {
       arrSkillsCommTask.push(skill._id.$oid);
     });
 
+    //lọc ra những id không có trong commTask đã sữ dụng => tính tiền
     arrSkillCommTaskNew = arrSkillsCommTask.filter(
       (oidSkill) => !arrIDSkillCommUsed.includes(oidSkill)
     );
+    // console.log(arrIDSkillCommUsed, 'đã dùng')
+    // console.log(arrSkillCommTaskNew, 'skill mới')
 
+    //lọc ra những id skill trùng với commTask đã sữ dụng => không tính tiền
     arrSkillOverlapCommTaskNew = arrSkillsCommTask.filter((oidSkill) =>
       arrIDSkillCommUsed.includes(oidSkill)
     );
@@ -1901,7 +1917,7 @@ btnPricingCalculation.addEventListener("click", () => {
     insertCountSkill(commTaskNotOverlap);
     insertCalculateCostFullRange(commTaskNotOverlap, prices);
     insertCalculateCostStandard(commTaskNotOverlap, prices);
-    console.log(commTaskNotOverlap);
+    // console.log(commTaskNotOverlap);
     if (commTaskNotOverlap[0].Skills.length !== 0) {
       dataNotOverlap.push(commTaskNotOverlap[0]);
     }
@@ -1955,7 +1971,6 @@ sortOrderSelect.addEventListener("change", function () {
     }
   });
 
-  console.log(sortedTasks);
   loadCommTasks_v2(sortedTasks);
   for (let i = 0; i < idComm.length; i++) {
     addCommTaskListener(idComm[i], sortedTasks, dataOverlap, dataNotOverlap);

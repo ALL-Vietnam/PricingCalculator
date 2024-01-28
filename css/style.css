@@ -361,7 +361,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .nameComm {
   background-color: #266b94;
@@ -381,6 +380,16 @@ p {
   padding: 20px;
   border-radius: 0 0 20px 20px;
   border: 1px solid #266b94;
+
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.itemCommTask {
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+.itemCommTask:hover {
+  /* transform: translateY(-2px); */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .descCommTaskEN {
@@ -450,15 +459,17 @@ p {
   align-items: center;
   justify-content: center;
   transition: box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
 }
 .btnDetail:hover {
-  background-color: #1a4e6e; /* Màu nền khi hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng khi hover */
+  background-color: #226084; /* Màu nền khi hover */
+  transform: translateY(-1px);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); /* Đổ bóng khi hover */
 }
 
 .btnDetail:active {
-  background-color: #133450; /* Màu nền khi click */
+  background-color: #1e5475; /* Màu nền khi click */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng khi click */
 }
 @media (max-width: 767px) {
