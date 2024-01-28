@@ -639,296 +639,301 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
       <div>
       <h3>Chi tiết ${commTask.name} </h3>
       </div>
-        <div>
-        <div style="display: flex; gap: 30px; padding: 20px 0px 0px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <!-- A1 -->
-              <tbody style="background-color: #ffd0d3;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px;" >
-                <tr style="background-color: #ffd0d3;color: #FF0000;">
-                  <td style=" background-color: #FF0000; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">A1</td>
-        
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_l}</td>
-      
-                </tr>
-                
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_r}</td>
-      
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_s}</td>
-      
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_str}</td>
-      
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">0</td>
-      
-                </tr>
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_w}</td>
-      
-                </tr>
-      
-              </tbody>
-            </table>
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-            <!-- A2 -->
-            <tbody style="background-color: #fbe4d5;color: #ed7d31; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-              <tr style="background-color: #fbe4d5;color: #ed7d31;">
-                <td style=" background-color: #FF9900; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">A2</td>
+      <div class="tableDetail">
+
+      <div class="cefrBlock">
+
+        <div class="a1_a2_level" >
+          <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+            <!-- A1 -->
+            <tbody style="background-color: #ffd0d3;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px;" >
+              <tr style="background-color: #ffd0d3;color: #FF0000;">
+                <td style=" background-color: #FF0000; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">A1</td>
       
                 <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_l}</td>
-  
-              </tr>
-              
-              <tr>
-                <!-- R-C2-2 đến R-C2-7 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_r}</td>
-  
-              </tr>
-              <tr>
-                <!-- S-C2-8 đến S-C2-10 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_s}</td>
-  
-              </tr>
-              <tr>
-                <!-- STR-C2-11 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_str}</td>
-  
-              </tr >
-              <tr>
-                <!-- LQ-C2-12 đến LQ-C2-15 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_lq}</td>
-  
-              </tr >
-              <tr>
-                <!-- W-C2-16 đến W-C2-23 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_w}</td>
-  
-              </tr>
-            </tbody>
-            </table>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-                <tbody style="background-color: #fef2cb;color: #bf9000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                  <tr style="background-color: #fef2cb;color: #bf9000;">
-                    <td style=" background-color: #FFFF00; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">B1</td>
-                    
-                    <!-- L-B1-1 đến L-B1-6 -->
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_l}</td>
-      
-                  </tr>
-                  
-                  <tr>
-                    <!-- R-C2-2 đến R-C2-7 -->
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_r}</td>
-      
-                  </tr>
-                  <tr>
-                    <!-- S-C2-8 đến S-C2-10 -->
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_s}</td>
-      
-                  </tr>
-                  <tr>
-                    <!-- STR-C2-11 -->
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_str}</td>
-      
-                  </tr >
-                  <tr>
-                    <!-- LQ-C2-12 đến LQ-C2-15 -->
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_lq}</td>
-      
-                  </tr >
-                  <tr>
-                    <!-- W-C2-16 đến W-C2-23 -->
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_w}</td>
-      
-                  </tr>
-                </tbody>
-            </table>
-  
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-            <!-- B2 -->
-            <tbody style="background-color: #9cc2e5; color: #0432ff; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-              <tr style="background-color: #9cc2e5; color: #0432ff;">
-                <td style=" background-color: #0000FF; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">B2</td>
-      
-                <!-- L-B2-1 đến L-B2-6 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_l}</td>
-  
-              </tr>
-              
-              <tr>
-                <!-- R-C2-2 đến R-C2-7 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_r}</td>
-  
-              </tr>
-              <tr>
-                <!-- S-C2-8 đến S-C2-10 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_s}</td>
-  
-              </tr>
-              <tr>
-                <!-- STR-C2-11 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_str}</td>
-  
-              </tr >
-              <tr>
-                <!-- LQ-C2-12 đến LQ-C2-15 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_lq}</td>
-              </tr >
-              <tr>
-                <!-- W-C2-16 đến W-C2-23 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_w}</td>
-              </tr>
-            </tbody>
-            <!-- B1 -->
-  
-            </table>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <!-- C1 -->
-              <tbody style="background-color: #d9e2f3; color: #2f5496; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #d9e2f3; color: #2f5496;">
-                  <td style=" background-color: #333399; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C1</td>
-        
-                  <!-- L-C1-1 đến L-C1-6 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_l}</td>
-                </tr>
-                
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_r}</td>
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_s}</td>
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_str}</td>
-                </tr >
-                <tr>
-                  <!-- LQ-C2-12 đến LQ-C2-15 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_lq}</td>
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_w}</td>
-                </tr>
-              </tbody>
-            </table>
-              <!-- C2 -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-      
-              <tbody style="background-color: #e6daff; color: #7030a0; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #e6daff; color: #7030a0;">
-                  <td style=" background-color: #993366; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C2</td>
-                  <!-- L-C2-1 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_l}</td>
-                </tr>
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_r}</td>
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_s}</td>
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_str}</td>
-                </tr >
-                <tr>
-                  <!-- LQ-C2-12 đến LQ-C2-15 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_lq}</td>
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_w}</td>
-                </tr>
-              </tbody>
-      
-            </table>
-          </div>
-        </div>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_l}</td>
     
-        <div style="display: flex; gap: 30px; padding: 20px 0px 0px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-              <!-- S-E -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <tbody style="background-color: #ff1717;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #ffd0d3;color: #FF0000;">
-                  <td style="background-color: #ff1717; color: #fff; font-size: 12px;width: 172px;" colspan="4">SOCIO-EMOTIONAL DIMENSION</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_se}</td>
-  
+              </tr>
+              
+              <tr>
+                <!-- R-C2-2 đến R-C2-7 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_r}</td>
+    
+              </tr>
+              <tr>
+                <!-- S-C2-8 đến S-C2-10 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_s}</td>
+    
+              </tr>
+              <tr>
+                <!-- STR-C2-11 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_str}</td>
+    
+              </tr >
+              <tr>
+                <!-- W-C2-16 đến W-C2-23 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">0</td>
+    
+              </tr>
+              <tr>
+                <!-- W-C2-16 đến W-C2-23 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_w}</td>
+    
+              </tr>
+    
+            </tbody>
+          </table>
+          <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+          <!-- A2 -->
+          <tbody style="background-color: #fbe4d5;color: #ed7d31; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+            <tr style="background-color: #fbe4d5;color: #ed7d31;">
+              <td style=" background-color: #FF9900; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">A2</td>
+    
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_l}</td>
+
+            </tr>
+            
+            <tr>
+              <!-- R-C2-2 đến R-C2-7 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_r}</td>
+
+            </tr>
+            <tr>
+              <!-- S-C2-8 đến S-C2-10 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_s}</td>
+
+            </tr>
+            <tr>
+              <!-- STR-C2-11 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_str}</td>
+
+            </tr >
+            <tr>
+              <!-- LQ-C2-12 đến LQ-C2-15 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_lq}</td>
+
+            </tr >
+            <tr>
+              <!-- W-C2-16 đến W-C2-23 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_w}</td>
+
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="b1_b2_level">
+          <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+              <tbody style="background-color: #fef2cb;color: #bf9000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                <tr style="background-color: #fef2cb;color: #bf9000;">
+                  <td style=" background-color: #FFFF00; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">B1</td>
+                  
+                  <!-- L-B1-1 đến L-B1-6 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_l}</td>
+    
+                </tr>
+                
+                <tr>
+                  <!-- R-C2-2 đến R-C2-7 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_r}</td>
+    
+                </tr>
+                <tr>
+                  <!-- S-C2-8 đến S-C2-10 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_s}</td>
+    
+                </tr>
+                <tr>
+                  <!-- STR-C2-11 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_str}</td>
+    
+                </tr >
+                <tr>
+                  <!-- LQ-C2-12 đến LQ-C2-15 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_lq}</td>
+    
+                </tr >
+                <tr>
+                  <!-- W-C2-16 đến W-C2-23 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_w}</td>
+    
                 </tr>
               </tbody>
-            </table>
-          </div>
+          </table>
+
+          <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+          <!-- B2 -->
+          <tbody style="background-color: #9cc2e5; color: #0432ff; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+            <tr style="background-color: #9cc2e5; color: #0432ff;">
+              <td style=" background-color: #0000FF; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">B2</td>
+    
+              <!-- L-B2-1 đến L-B2-6 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_l}</td>
+
+            </tr>
+            
+            <tr>
+              <!-- R-C2-2 đến R-C2-7 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_r}</td>
+
+            </tr>
+            <tr>
+              <!-- S-C2-8 đến S-C2-10 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_s}</td>
+
+            </tr>
+            <tr>
+              <!-- STR-C2-11 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_str}</td>
+
+            </tr >
+            <tr>
+              <!-- LQ-C2-12 đến LQ-C2-15 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_lq}</td>
+            </tr >
+            <tr>
+              <!-- W-C2-16 đến W-C2-23 -->
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+              <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_w}</td>
+            </tr>
+          </tbody>
+          <!-- B1 -->
+
+          </table>
         </div>
-  
-        <div style="display: flex; gap: 30px; padding: 20px 0px 20px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-          <!-- P-L -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <tbody style="background-color: #5b9bd5;color: #000000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #9bc2e6;color: #000000;">
-                  <td style="background-color: #5b9bd5;color: #000000; font-size: 12px;width: 172px; " colspan="4">PSYCHOMOTOR DIMENSION</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.rangeP}</td>
-  
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="c1_c2_level">
+          <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+            <!-- C1 -->
+            <tbody style="background-color: #d9e2f3; color: #2f5496; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+              <tr style="background-color: #d9e2f3; color: #2f5496;">
+                <td style=" background-color: #333399; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C1</td>
+      
+                <!-- L-C1-1 đến L-C1-6 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_l}</td>
+              </tr>
+              
+              <tr>
+                <!-- R-C2-2 đến R-C2-7 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_r}</td>
+              </tr>
+              <tr>
+                <!-- S-C2-8 đến S-C2-10 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_s}</td>
+              </tr>
+              <tr>
+                <!-- STR-C2-11 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_str}</td>
+              </tr >
+              <tr>
+                <!-- LQ-C2-12 đến LQ-C2-15 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_lq}</td>
+              </tr >
+              <tr>
+                <!-- W-C2-16 đến W-C2-23 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_w}</td>
+              </tr>
+            </tbody>
+          </table>
+            <!-- C2 -->
+          <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+    
+            <tbody style="background-color: #e6daff; color: #7030a0; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+              <tr style="background-color: #e6daff; color: #7030a0;">
+                <td style=" background-color: #993366; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C2</td>
+                <!-- L-C2-1 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_l}</td>
+              </tr>
+              <tr>
+                <!-- R-C2-2 đến R-C2-7 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_r}</td>
+              </tr>
+              <tr>
+                <!-- S-C2-8 đến S-C2-10 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_s}</td>
+              </tr>
+              <tr>
+                <!-- STR-C2-11 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_str}</td>
+              </tr >
+              <tr>
+                <!-- LQ-C2-12 đến LQ-C2-15 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_lq}</td>
+              </tr >
+              <tr>
+                <!-- W-C2-16 đến W-C2-23 -->
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_w}</td>
+              </tr>
+            </tbody>
+    
+          </table>
         </div>
+
+      </div>
+
+      <div class="seBlock">
+        <div class="se" style="display: flex; flex-direction: column; gap: 20px;">
+            <!-- S-E -->
+          <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+            <tbody style="background-color: #ff1717;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+              <tr style="background-color: #ffd0d3;color: #FF0000;">
+                <td style="background-color: #ff1717; color: #fff; font-size: 12px;width: 172px;" colspan="4">SOCIO-EMOTIONAL DIMENSION</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_se}</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="plBlock">
+        <div class="pl" style="display: flex; flex-direction: column; gap: 20px;">
+        <!-- P-L -->
+          <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+            <tbody style="background-color: #5b9bd5;color: #000000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+              <tr style="background-color: #9bc2e6;color: #000000;">
+                <td style="background-color: #5b9bd5;color: #000000; font-size: 12px;width: 172px; " colspan="4">PSYCHOMOTOR DIMENSION</td>
+                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.rangeP}</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+  </div>
   
   
       </div>
@@ -948,7 +953,7 @@ const loadDetailCommTask = (commTaskClicked, dataOverlap, dataNotOverlap) => {
   detailCommTask.appendChild(detailCommTaskBlock3);
 
   let detailCommTaskOverlap = "";
-
+  let detailCommTaskNew = ""
   if (
     dataNotOverlap.length !== 0 &&
     dataOverlap.length !== 0 &&
@@ -962,611 +967,619 @@ const loadDetailCommTask = (commTaskClicked, dataOverlap, dataNotOverlap) => {
     detailCommTaskOverlap = `
     <div class="${dataOverlap._id.$oid} desc-comp-offer">
       <div class="row desc-comp-offer-cont-pro">
+      <div class = 'commTaskOverlapBlock'>
+        <div class = 'titleCommTaskOverlapBlock'>
+          <h3>Kỹ năng đã có trong communication task đã sử dụng</h3>
+        </div>
 
-      <div>
-      <div>
-      <h3>Kỹ năng đã có trong communication task đã sử dụng</h3>
-      </div>
-        <div>
-        <div style="display: flex; gap: 30px; padding: 20px 0px 0px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <!-- A1 -->
-              <tbody style="background-color: #ffd0d3;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px;" >
-                <tr style="background-color: #ffd0d3;color: #FF0000;">
-                  <td style=" background-color: #FF0000; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">A1</td>
+        <div class="tableDetail">
 
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_l}</td>
-
-                </tr>
-
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_r}</td>
-
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_s}</td>
-
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_str}</td>
-
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">0</td>
-
-                </tr>
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_w}</td>
-
-                </tr>
-
-              </tbody>
-            </table>
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-            <!-- A2 -->
-            <tbody style="background-color: #fbe4d5;color: #ed7d31; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-              <tr style="background-color: #fbe4d5;color: #ed7d31;">
-                <td style=" background-color: #FF9900; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">A2</td>
-
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_l}</td>
-
-              </tr>
-
-              <tr>
-                <!-- R-C2-2 đến R-C2-7 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_r}</td>
-
-              </tr>
-              <tr>
-                <!-- S-C2-8 đến S-C2-10 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_s}</td>
-
-              </tr>
-              <tr>
-                <!-- STR-C2-11 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_str}</td>
-
-              </tr >
-              <tr>
-                <!-- LQ-C2-12 đến LQ-C2-15 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_lq}</td>
-
-              </tr >
-              <tr>
-                <!-- W-C2-16 đến W-C2-23 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_w}</td>
-
-              </tr>
-            </tbody>
-            </table>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-                <tbody style="background-color: #fef2cb;color: #bf9000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                  <tr style="background-color: #fef2cb;color: #bf9000;">
-                    <td style=" background-color: #FFFF00; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">B1</td>
-
-                    <!-- L-B1-1 đến L-B1-6 -->
+          <div class="cefrBlock">
+  
+            <div class="a1_a2_level" >
+              <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                <!-- A1 -->
+                <tbody style="background-color: #ffd0d3;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px;" >
+                  <tr style="background-color: #ffd0d3;color: #FF0000;">
+                    <td style=" background-color: #FF0000; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">A1</td>
+          
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_l}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_l}</td>
+        
                   </tr>
-
+                  
                   <tr>
                     <!-- R-C2-2 đến R-C2-7 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_r}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_r}</td>
+        
                   </tr>
                   <tr>
                     <!-- S-C2-8 đến S-C2-10 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_s}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_s}</td>
+        
                   </tr>
                   <tr>
                     <!-- STR-C2-11 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_str}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_str}</td>
+        
+                  </tr >
+                  <tr>
+                    <!-- W-C2-16 đến W-C2-23 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">0</td>
+        
+                  </tr>
+                  <tr>
+                    <!-- W-C2-16 đến W-C2-23 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A1_w}</td>
+        
+                  </tr>
+        
+                </tbody>
+              </table>
+              <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+              <!-- A2 -->
+              <tbody style="background-color: #fbe4d5;color: #ed7d31; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                <tr style="background-color: #fbe4d5;color: #ed7d31;">
+                  <td style=" background-color: #FF9900; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">A2</td>
+        
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_l}</td>
+    
+                </tr>
+                
+                <tr>
+                  <!-- R-C2-2 đến R-C2-7 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_r}</td>
+    
+                </tr>
+                <tr>
+                  <!-- S-C2-8 đến S-C2-10 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_s}</td>
+    
+                </tr>
+                <tr>
+                  <!-- STR-C2-11 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_str}</td>
+    
+                </tr >
+                <tr>
+                  <!-- LQ-C2-12 đến LQ-C2-15 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_lq}</td>
+    
+                </tr >
+                <tr>
+                  <!-- W-C2-16 đến W-C2-23 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_w}</td>
+    
+                </tr>
+              </tbody>
+              </table>
+            </div>
+            <div class="b1_b2_level">
+              <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                  <tbody style="background-color: #fef2cb;color: #bf9000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                    <tr style="background-color: #fef2cb;color: #bf9000;">
+                      <td style=" background-color: #FFFF00; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">B1</td>
+                      
+                      <!-- L-B1-1 đến L-B1-6 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_l}</td>
+        
+                    </tr>
+                    
+                    <tr>
+                      <!-- R-C2-2 đến R-C2-7 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_r}</td>
+        
+                    </tr>
+                    <tr>
+                      <!-- S-C2-8 đến S-C2-10 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_s}</td>
+        
+                    </tr>
+                    <tr>
+                      <!-- STR-C2-11 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_str}</td>
+        
+                    </tr >
+                    <tr>
+                      <!-- LQ-C2-12 đến LQ-C2-15 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_lq}</td>
+        
+                    </tr >
+                    <tr>
+                      <!-- W-C2-16 đến W-C2-23 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_w}</td>
+        
+                    </tr>
+                  </tbody>
+              </table>
+    
+              <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+              <!-- B2 -->
+              <tbody style="background-color: #9cc2e5; color: #0432ff; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                <tr style="background-color: #9cc2e5; color: #0432ff;">
+                  <td style=" background-color: #0000FF; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">B2</td>
+        
+                  <!-- L-B2-1 đến L-B2-6 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_l}</td>
+    
+                </tr>
+                
+                <tr>
+                  <!-- R-C2-2 đến R-C2-7 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_r}</td>
+    
+                </tr>
+                <tr>
+                  <!-- S-C2-8 đến S-C2-10 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_s}</td>
+    
+                </tr>
+                <tr>
+                  <!-- STR-C2-11 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_str}</td>
+    
+                </tr >
+                <tr>
+                  <!-- LQ-C2-12 đến LQ-C2-15 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_lq}</td>
+                </tr >
+                <tr>
+                  <!-- W-C2-16 đến W-C2-23 -->
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_w}</td>
+                </tr>
+              </tbody>
+              <!-- B1 -->
+    
+              </table>
+            </div>
+            <div class="c1_c2_level">
+              <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                <!-- C1 -->
+                <tbody style="background-color: #d9e2f3; color: #2f5496; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                  <tr style="background-color: #d9e2f3; color: #2f5496;">
+                    <td style=" background-color: #333399; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C1</td>
+          
+                    <!-- L-C1-1 đến L-C1-6 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_l}</td>
+                  </tr>
+                  
+                  <tr>
+                    <!-- R-C2-2 đến R-C2-7 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_r}</td>
+                  </tr>
+                  <tr>
+                    <!-- S-C2-8 đến S-C2-10 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_s}</td>
+                  </tr>
+                  <tr>
+                    <!-- STR-C2-11 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_str}</td>
                   </tr >
                   <tr>
                     <!-- LQ-C2-12 đến LQ-C2-15 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B1_lq}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_lq}</td>
                   </tr >
                   <tr>
                     <!-- W-C2-16 đến W-C2-23 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_A2_w}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_w}</td>
                   </tr>
                 </tbody>
-            </table>
-
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-            <!-- B2 -->
-            <tbody style="background-color: #9cc2e5; color: #0432ff; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-              <tr style="background-color: #9cc2e5; color: #0432ff;">
-                <td style=" background-color: #0000FF; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">B2</td>
-
-                <!-- L-B2-1 đến L-B2-6 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_l}</td>
-
-              </tr>
-
-              <tr>
-                <!-- R-C2-2 đến R-C2-7 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_r}</td>
-
-              </tr>
-              <tr>
-                <!-- S-C2-8 đến S-C2-10 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_s}</td>
-
-              </tr>
-              <tr>
-                <!-- STR-C2-11 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_str}</td>
-
-              </tr >
-              <tr>
-                <!-- LQ-C2-12 đến LQ-C2-15 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_lq}</td>
-              </tr >
-              <tr>
-                <!-- W-C2-16 đến W-C2-23 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_B2_w}</td>
-              </tr>
-            </tbody>
-            <!-- B1 -->
-
-            </table>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <!-- C1 -->
-              <tbody style="background-color: #d9e2f3; color: #2f5496; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #d9e2f3; color: #2f5496;">
-                  <td style=" background-color: #333399; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C1</td>
-
-                  <!-- L-C1-1 đến L-C1-6 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_l}</td>
-                </tr>
-
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_r}</td>
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_s}</td>
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_str}</td>
-                </tr >
-                <tr>
-                  <!-- LQ-C2-12 đến LQ-C2-15 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_lq}</td>
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C1_w}</td>
-                </tr>
-              </tbody>
-            </table>
-              <!-- C2 -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-
-              <tbody style="background-color: #e6daff; color: #7030a0; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #e6daff; color: #7030a0;">
-                  <td style=" background-color: #993366; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C2</td>
-                  <!-- L-C2-1 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_l}</td>
-                </tr>
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_r}</td>
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_s}</td>
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_str}</td>
-                </tr >
-                <tr>
-                  <!-- LQ-C2-12 đến LQ-C2-15 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_lq}</td>
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_w}</td>
-                </tr>
-              </tbody>
-
-            </table>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 30px; padding: 20px 0px 0px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-              <!-- S-E -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <tbody style="background-color: #ff1717;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #ffd0d3;color: #FF0000;">
-                  <td style="background-color: #ff1717; color: #fff; font-size: 12px;width: 172px;" colspan="4">SOCIO-EMOTIONAL DIMENSION</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_se}</td>
-
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 30px; padding: 20px 0px 20px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-          <!-- P-L -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <tbody style="background-color: #5b9bd5;color: #000000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #9bc2e6;color: #000000;">
-                  <td style="background-color: #5b9bd5;color: #000000; font-size: 12px;width: 172px; " colspan="4">PSYCHOMOTOR DIMENSION</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.rangeP}</td>
-
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-      </div>
-      <div>
-      <div>
-      <h3>Kỹ năng mới của ${commTask.name}</h3>
-      </div>
-        <div>
-        <div style="display: flex; gap: 30px; padding: 20px 0px 0px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <!-- A1 -->
-              <tbody style="background-color: #ffd0d3;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px;" >
-                <tr style="background-color: #ffd0d3;color: #FF0000;">
-                  <td style=" background-color: #FF0000; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">A1</td>
-
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_l}</td>
-
-                </tr>
-
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_r}</td>
-
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_s}</td>
-
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_str}</td>
-
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">0</td>
-
-                </tr>
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_w}</td>
-
-                </tr>
-
-              </tbody>
-            </table>
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-            <!-- A2 -->
-            <tbody style="background-color: #fbe4d5;color: #ed7d31; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-              <tr style="background-color: #fbe4d5;color: #ed7d31;">
-                <td style=" background-color: #FF9900; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">A2</td>
-
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_l}</td>
-
-              </tr>
-
-              <tr>
-                <!-- R-C2-2 đến R-C2-7 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_r}</td>
-
-              </tr>
-              <tr>
-                <!-- S-C2-8 đến S-C2-10 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_s}</td>
-
-              </tr>
-              <tr>
-                <!-- STR-C2-11 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_str}</td>
-
-              </tr >
-              <tr>
-                <!-- LQ-C2-12 đến LQ-C2-15 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_lq}</td>
-
-              </tr >
-              <tr>
-                <!-- W-C2-16 đến W-C2-23 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_w}</td>
-
-              </tr>
-            </tbody>
-            </table>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-                <tbody style="background-color: #fef2cb;color: #bf9000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                  <tr style="background-color: #fef2cb;color: #bf9000;">
-                    <td style=" background-color: #FFFF00; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">B1</td>
-
-                    <!-- L-B1-1 đến L-B1-6 -->
+              </table>
+                <!-- C2 -->
+              <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+        
+                <tbody style="background-color: #e6daff; color: #7030a0; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                  <tr style="background-color: #e6daff; color: #7030a0;">
+                    <td style=" background-color: #993366; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C2</td>
+                    <!-- L-C2-1 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_l}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_l}</td>
                   </tr>
-
                   <tr>
                     <!-- R-C2-2 đến R-C2-7 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_r}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_r}</td>
                   </tr>
                   <tr>
                     <!-- S-C2-8 đến S-C2-10 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_s}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_s}</td>
                   </tr>
                   <tr>
                     <!-- STR-C2-11 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_str}</td>
-
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_str}</td>
                   </tr >
                   <tr>
                     <!-- LQ-C2-12 đến LQ-C2-15 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_lq}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_lq}</td>
+                  </tr >
+                  <tr>
+                    <!-- W-C2-16 đến W-C2-23 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_C2_w}</td>
+                  </tr>
+                </tbody>
+        
+              </table>
+            </div>
 
+          </div>
+
+          <div class="seBlock">
+            <div class="se" style="display: flex; flex-direction: column; gap: 20px;">
+                <!-- S-E -->
+              <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                <tbody style="background-color: #ff1717;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                  <tr style="background-color: #ffd0d3;color: #FF0000;">
+                    <td style="background-color: #ff1717; color: #fff; font-size: 12px;width: 172px;" colspan="4">SOCIO-EMOTIONAL DIMENSION</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.count_se}</td>
+    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+    
+          <div class="plBlock">
+            <div class="pl" style="display: flex; flex-direction: column; gap: 20px;">
+            <!-- P-L -->
+              <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                <tbody style="background-color: #5b9bd5;color: #000000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                  <tr style="background-color: #9bc2e6;color: #000000;">
+                    <td style="background-color: #5b9bd5;color: #000000; font-size: 12px;width: 172px; " colspan="4">PSYCHOMOTOR DIMENSION</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataOverlap.countTypeSkills.rangeP}</td>
+    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    `
+    detailCommTaskNew =    `
+    <div class="${dataNotOverlap._id.$oid} desc-comp-offer">
+      <div class="row desc-comp-offer-cont-pro">
+        <div class = "commTaskNewBlock">
+          <div class='titleCommTaskNew'>
+            <h3>Kỹ năng mới của ${dataNotOverlap.name}</h3>
+          </div>
+          <div class="tableDetail">
+
+            <div class="cefrBlock">
+    
+              <div class="a1_a2_level" >
+                <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                  <!-- A1 -->
+                  <tbody style="background-color: #ffd0d3;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px;" >
+                    <tr style="background-color: #ffd0d3;color: #FF0000;">
+                      <td style=" background-color: #FF0000; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">A1</td>
+            
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_l}</td>
+          
+                    </tr>
+                    
+                    <tr>
+                      <!-- R-C2-2 đến R-C2-7 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_r}</td>
+          
+                    </tr>
+                    <tr>
+                      <!-- S-C2-8 đến S-C2-10 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_s}</td>
+          
+                    </tr>
+                    <tr>
+                      <!-- STR-C2-11 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_str}</td>
+          
+                    </tr >
+                    <tr>
+                      <!-- W-C2-16 đến W-C2-23 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">0</td>
+          
+                    </tr>
+                    <tr>
+                      <!-- W-C2-16 đến W-C2-23 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A1_w}</td>
+          
+                    </tr>
+          
+                  </tbody>
+                </table>
+                <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                <!-- A2 -->
+                <tbody style="background-color: #fbe4d5;color: #ed7d31; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                  <tr style="background-color: #fbe4d5;color: #ed7d31;">
+                    <td style=" background-color: #FF9900; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">A2</td>
+          
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_l}</td>
+      
+                  </tr>
+                  
+                  <tr>
+                    <!-- R-C2-2 đến R-C2-7 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_r}</td>
+      
+                  </tr>
+                  <tr>
+                    <!-- S-C2-8 đến S-C2-10 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_s}</td>
+      
+                  </tr>
+                  <tr>
+                    <!-- STR-C2-11 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_str}</td>
+      
+                  </tr >
+                  <tr>
+                    <!-- LQ-C2-12 đến LQ-C2-15 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_lq}</td>
+      
                   </tr >
                   <tr>
                     <!-- W-C2-16 đến W-C2-23 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_w}</td>
-
+      
                   </tr>
                 </tbody>
-            </table>
+                </table>
+              </div>
+              <div class="b1_b2_level">
+                <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                    <tbody style="background-color: #fef2cb;color: #bf9000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                      <tr style="background-color: #fef2cb;color: #bf9000;">
+                        <td style=" background-color: #FFFF00; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">B1</td>
+                        
+                        <!-- L-B1-1 đến L-B1-6 -->
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_l}</td>
+          
+                      </tr>
+                      
+                      <tr>
+                        <!-- R-C2-2 đến R-C2-7 -->
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_r}</td>
+          
+                      </tr>
+                      <tr>
+                        <!-- S-C2-8 đến S-C2-10 -->
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_s}</td>
+          
+                      </tr>
+                      <tr>
+                        <!-- STR-C2-11 -->
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_str}</td>
+          
+                      </tr >
+                      <tr>
+                        <!-- LQ-C2-12 đến LQ-C2-15 -->
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B1_lq}</td>
+          
+                      </tr >
+                      <tr>
+                        <!-- W-C2-16 đến W-C2-23 -->
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                        <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_A2_w}</td>
+          
+                      </tr>
+                    </tbody>
+                </table>
+      
+                <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                <!-- B2 -->
+                <tbody style="background-color: #9cc2e5; color: #0432ff; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                  <tr style="background-color: #9cc2e5; color: #0432ff;">
+                    <td style=" background-color: #0000FF; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">B2</td>
+          
+                    <!-- L-B2-1 đến L-B2-6 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_l}</td>
+      
+                  </tr>
+                  
+                  <tr>
+                    <!-- R-C2-2 đến R-C2-7 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_r}</td>
+      
+                  </tr>
+                  <tr>
+                    <!-- S-C2-8 đến S-C2-10 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_s}</td>
+      
+                  </tr>
+                  <tr>
+                    <!-- STR-C2-11 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_str}</td>
+      
+                  </tr >
+                  <tr>
+                    <!-- LQ-C2-12 đến LQ-C2-15 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_lq}</td>
+                  </tr >
+                  <tr>
+                    <!-- W-C2-16 đến W-C2-23 -->
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_w}</td>
+                  </tr>
+                </tbody>
+                <!-- B1 -->
+      
+                </table>
+              </div>
+              <div class="c1_c2_level">
+                <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                  <!-- C1 -->
+                  <tbody style="background-color: #d9e2f3; color: #2f5496; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                    <tr style="background-color: #d9e2f3; color: #2f5496;">
+                      <td style=" background-color: #333399; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C1</td>
+            
+                      <!-- L-C1-1 đến L-C1-6 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_l}</td>
+                    </tr>
+                    
+                    <tr>
+                      <!-- R-C2-2 đến R-C2-7 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_r}</td>
+                    </tr>
+                    <tr>
+                      <!-- S-C2-8 đến S-C2-10 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_s}</td>
+                    </tr>
+                    <tr>
+                      <!-- STR-C2-11 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_str}</td>
+                    </tr >
+                    <tr>
+                      <!-- LQ-C2-12 đến LQ-C2-15 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_lq}</td>
+                    </tr >
+                    <tr>
+                      <!-- W-C2-16 đến W-C2-23 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_w}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                  <!-- C2 -->
+                <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+          
+                  <tbody style="background-color: #e6daff; color: #7030a0; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                    <tr style="background-color: #e6daff; color: #7030a0;">
+                      <td style=" background-color: #993366; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C2</td>
+                      <!-- L-C2-1 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_l}</td>
+                    </tr>
+                    <tr>
+                      <!-- R-C2-2 đến R-C2-7 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_r}</td>
+                    </tr>
+                    <tr>
+                      <!-- S-C2-8 đến S-C2-10 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_s}</td>
+                    </tr>
+                    <tr>
+                      <!-- STR-C2-11 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_str}</td>
+                    </tr >
+                    <tr>
+                      <!-- LQ-C2-12 đến LQ-C2-15 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_lq}</td>
+                    </tr >
+                    <tr>
+                      <!-- W-C2-16 đến W-C2-23 -->
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_w}</td>
+                    </tr>
+                  </tbody>
+          
+                </table>
+              </div>
+            </div>
 
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-            <!-- B2 -->
-            <tbody style="background-color: #9cc2e5; color: #0432ff; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-              <tr style="background-color: #9cc2e5; color: #0432ff;">
-                <td style=" background-color: #0000FF; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">B2</td>
+            <div class="seBlock">
+              <div class="se" style="display: flex; flex-direction: column; gap: 20px;">
+                  <!-- S-E -->
+                <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                  <tbody style="background-color: #ff1717;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                    <tr style="background-color: #ffd0d3;color: #FF0000;">
+                      <td style="background-color: #ff1717; color: #fff; font-size: 12px;width: 172px;" colspan="4">SOCIO-EMOTIONAL DIMENSION</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_se}</td>
+      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+    
+            <div class="plBlock">
+              <div class="pl" style="display: flex; flex-direction: column; gap: 20px;">
+              <!-- P-L -->
+                <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
+                  <tbody style="background-color: #5b9bd5;color: #000000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
+                    <tr style="background-color: #9bc2e6;color: #000000;">
+                      <td style="background-color: #5b9bd5;color: #000000; font-size: 12px;width: 172px; " colspan="4">PSYCHOMOTOR DIMENSION</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.rangeP}</td>
+      
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-                <!-- L-B2-1 đến L-B2-6 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_l}</td>
-
-              </tr>
-
-              <tr>
-                <!-- R-C2-2 đến R-C2-7 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_r}</td>
-
-              </tr>
-              <tr>
-                <!-- S-C2-8 đến S-C2-10 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_s}</td>
-
-              </tr>
-              <tr>
-                <!-- STR-C2-11 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_str}</td>
-
-              </tr >
-              <tr>
-                <!-- LQ-C2-12 đến LQ-C2-15 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_lq}</td>
-              </tr >
-              <tr>
-                <!-- W-C2-16 đến W-C2-23 -->
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_B2_w}</td>
-              </tr>
-            </tbody>
-            <!-- B1 -->
-
-            </table>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <!-- C1 -->
-              <tbody style="background-color: #d9e2f3; color: #2f5496; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #d9e2f3; color: #2f5496;">
-                  <td style=" background-color: #333399; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C1</td>
-
-                  <!-- L-C1-1 đến L-C1-6 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_l}</td>
-                </tr>
-
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_r}</td>
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_s}</td>
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_str}</td>
-                </tr >
-                <tr>
-                  <!-- LQ-C2-12 đến LQ-C2-15 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_lq}</td>
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C1_w}</td>
-                </tr>
-              </tbody>
-            </table>
-              <!-- C2 -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-
-              <tbody style="background-color: #e6daff; color: #7030a0; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #e6daff; color: #7030a0;">
-                  <td style=" background-color: #993366; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C2</td>
-                  <!-- L-C2-1 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_l}</td>
-                </tr>
-                <tr>
-                  <!-- R-C2-2 đến R-C2-7 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_r}</td>
-                </tr>
-                <tr>
-                  <!-- S-C2-8 đến S-C2-10 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_s}</td>
-                </tr>
-                <tr>
-                  <!-- STR-C2-11 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_str}</td>
-                </tr >
-                <tr>
-                  <!-- LQ-C2-12 đến LQ-C2-15 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_lq}</td>
-                </tr >
-                <tr>
-                  <!-- W-C2-16 đến W-C2-23 -->
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_C2_w}</td>
-                </tr>
-              </tbody>
-
-            </table>
           </div>
         </div>
-
-        <div style="display: flex; gap: 30px; padding: 20px 0px 0px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-              <!-- S-E -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <tbody style="background-color: #ff1717;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #ffd0d3;color: #FF0000;">
-                  <td style="background-color: #ff1717; color: #fff; font-size: 12px;width: 172px;" colspan="4">SOCIO-EMOTIONAL DIMENSION</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.count_se}</td>
-
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 30px; padding: 20px 0px 20px 20px;">
-          <div style="display: flex; flex-direction: column; gap: 20px;">
-          <!-- P-L -->
-            <table  style="font-family: 'Calibri', sans-serif;border-collapse: collapse;text-align: center; font-size: 16px;">
-              <tbody style="background-color: #5b9bd5;color: #000000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
-                <tr style="background-color: #9bc2e6;color: #000000;">
-                  <td style="background-color: #5b9bd5;color: #000000; font-size: 12px;width: 172px; " colspan="4">PSYCHOMOTOR DIMENSION</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${dataNotOverlap.countTypeSkills.rangeP}</td>
-
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-      </div>
       </div>
     </div>
-    
     `;
   }
 
   if (detailCommTaskOverlap !== undefined) {
-    detailCommTaskBlock3.innerHTML += detailCommTaskOverlap;
+    detailCommTaskBlock3.innerHTML += detailCommTaskOverlap + detailCommTaskNew;
   } else {
     return;
   }
