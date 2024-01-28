@@ -484,7 +484,7 @@ const loadCommTasks_v2 = (data) => {
     idComm.push(commTask._id.$oid); // push id của commTask để làm id cho div 1 task
     // console.log(idComm, 'idcomm')
     // console.log(e)
-    var newCommTask = `<div id ='${commTask._id.$oid}' class="item" >
+    var newCommTask = `<div id ='${commTask._id.$oid}' class="item animate__animated animate__fadeIn" >
     <div class= "itemCommTask">
       <div class="nameComm">
         <p>${commTask.name}</p>
@@ -499,7 +499,7 @@ const loadCommTasks_v2 = (data) => {
           </p>
         </div>
         <div class="descDetailBelow">
-          <div class="descBlock">
+          <div class="descBlock ">
             <div class="totalSkill">
               <p class="descNameTotal">Total</p>
               <div class="descTotalSkill">${commTask.Skills.length} skills</div>
@@ -1896,8 +1896,6 @@ btnPricingCalculation.addEventListener("click", () => {
     arrSkillCommTaskNew = arrSkillsCommTask.filter(
       (oidSkill) => !arrIDSkillCommUsed.includes(oidSkill)
     );
-    // console.log(arrIDSkillCommUsed, 'đã dùng')
-    // console.log(arrSkillCommTaskNew, 'skill mới')
 
     //lọc ra những id skill trùng với commTask đã sữ dụng => không tính tiền
     arrSkillOverlapCommTaskNew = arrSkillsCommTask.filter((oidSkill) =>
@@ -1959,7 +1957,7 @@ sortOrderSelect.addEventListener("change", function () {
 
   const sortedTasks = tasksToSort.slice().sort((a, b) => {
     if (sortOrder === "alphabet") {
-      return a.name.localeCompare(b.name);
+      return 
     } else if (sortOrder === "asc") {
       return a.costFullRange - b.costFullRange;
     } else if (sortOrder === "desc") {
