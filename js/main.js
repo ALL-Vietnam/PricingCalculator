@@ -566,16 +566,11 @@ const insertBtnBack = () => {
       } else {
         loadCommTasks_v2(data);
       }
-      
+
       idCommAfterSubmit = [];
 
       for (let i = 0; i < idComm.length; i++) {
-        addCommTaskListener(
-          idComm[i],
-          data,
-          dataOverlap,
-          dataNotOverlap
-        );
+        addCommTaskListener(idComm[i], data, dataOverlap, dataNotOverlap);
       }
     });
   }
@@ -587,7 +582,6 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
   const detailCommTaskBlock1 = document.createElement("div");
   detailCommTaskBlock1.classList.add("detailCommTaskBlock1");
   detailCommTask.appendChild(detailCommTaskBlock1);
-  console.log(commTaskClicked)
   var detailCommTaskBlock1Clicked = `
     <div id="${commTaskClicked._id.$oid}" class="desc-comp-offer">
       <div class="row desc-comp-offer-cont-pro">
@@ -609,6 +603,7 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
           </div>
 
           <div class="priceComm flex">
+            <p>Total skills: ${commTaskClicked.Skills.length}</p>
             <p>Standard: ${commTaskClicked.costStandard
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} đ</p>
@@ -946,14 +941,13 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
   detailCommTaskBlock2.innerHTML = detailCommTaskBlock2Clicked;
 };
 const loadDetailCommTaskBlock3 = (dataOverlap, dataNotOverlap) => {
-
   const detailCommTask = document.querySelector(".detailCommTask");
   const detailCommTaskBlock3 = document.createElement("div");
   detailCommTaskBlock3.classList.add("detailCommTaskBlock3_Overlap_nonOverlap");
   detailCommTask.appendChild(detailCommTaskBlock3);
 
   let detailCommTaskOverlap = "";
-  let detailCommTaskNew = ""
+  let detailCommTaskNew = "";
   if (
     dataNotOverlap.length !== 0 &&
     dataOverlap.length !== 0 &&
@@ -1270,8 +1264,8 @@ const loadDetailCommTaskBlock3 = (dataOverlap, dataNotOverlap) => {
       </div>
 
     </div>
-    `
-    detailCommTaskNew =    `
+    `;
+    detailCommTaskNew = `
     <div class="${dataNotOverlap._id.$oid} desc-comp-offer">
       <div class="row desc-comp-offer-cont-pro">
         <div class = "commTaskNewBlock">
@@ -1606,13 +1600,13 @@ const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
         commTasksContainer.appendChild(detailCommTask);
 
         // filteredTasks là 1 mảng chứa 1 đối tượng commTask ví trí 0
-        let commTaskBlock1Clicked 
+        let commTaskBlock1Clicked;
         // chưa bấm pricing => detail chính data
-        if(dataNotOverlap.length === 0){
+        if (dataNotOverlap.length === 0) {
           commTaskBlock1Clicked = data.filter(
             (commTask) => commTask._id.$oid === `${id}`
           );
-        }else{
+        } else {
           commTaskBlock1Clicked = dataNotOverlap.filter(
             (commTask) => commTask._id.$oid === `${id}`
           );
@@ -1630,10 +1624,7 @@ const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
         insertBtnBack();
         loadDetailCommTaskBlock1(commTaskBlock1Clicked);
         loadDetailCommTaskBlock2(commTaskBlock2Clicked);
-        loadDetailCommTaskBlock3(
-          commTaskOverlap,
-          commTaskNotOverlap
-        );
+        loadDetailCommTaskBlock3(commTaskOverlap, commTaskNotOverlap);
       });
     }
   }
