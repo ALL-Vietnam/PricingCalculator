@@ -601,11 +601,9 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
             <p class="detailCommEN">${commTaskClicked.desc_en}</p>
             <p class="descCommVN">${commTaskClicked.desc_vi}</p>
           </div>
-
-          <div class="totalSkill flex">
-          <p>Total: ${commTaskClicked.Skills.length} skills</p>
-
-        </div>
+          <div class="descCommTotalBlock">
+            <p class="descCommTotal">Total: ${commTaskClicked.Skills.length} skills</p>
+          </div>
 
           <div class="priceComm flex">
             <p>Standard: ${commTaskClicked.costStandard
