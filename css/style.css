@@ -491,8 +491,7 @@ p {
   background-color: #1e5475; /* Màu nền khi click */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng khi click */
 }
-@media only screen and (max-width: 600px) {
-  /* Kích thước màn hình tối đa để thay đổi layout là 600px */
+/* @media only screen and (max-width: 600px) {
   .descBlock {
     flex-direction: column;
   }
@@ -509,7 +508,7 @@ p {
   .priceFullRange {
     width: 50%;
   }
-}
+} */
 @media (max-width: 767px) {
   #items {
     margin-top: 20px;
