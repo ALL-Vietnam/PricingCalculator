@@ -587,7 +587,7 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
   const detailCommTaskBlock1 = document.createElement("div");
   detailCommTaskBlock1.classList.add("detailCommTaskBlock1");
   detailCommTask.appendChild(detailCommTaskBlock1);
-
+  console.log(commTaskClicked)
   var detailCommTaskBlock1Clicked = `
     <div id="${commTaskClicked._id.$oid}" class="desc-comp-offer">
       <div class="row desc-comp-offer-cont-pro">
@@ -945,8 +945,8 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
 
   detailCommTaskBlock2.innerHTML = detailCommTaskBlock2Clicked;
 };
-const loadDetailCommTask = (commTaskClicked, dataOverlap, dataNotOverlap) => {
-  const [commTask] = commTaskClicked;
+const loadDetailCommTaskBlock3 = (dataOverlap, dataNotOverlap) => {
+
   const detailCommTask = document.querySelector(".detailCommTask");
   const detailCommTaskBlock3 = document.createElement("div");
   detailCommTaskBlock3.classList.add("detailCommTaskBlock3_Overlap_nonOverlap");
@@ -1606,7 +1606,19 @@ const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
         commTasksContainer.appendChild(detailCommTask);
 
         // filteredTasks là 1 mảng chứa 1 đối tượng commTask ví trí 0
-        const commTaskClicked = data.filter(
+        let commTaskBlock1Clicked 
+        // chưa bấm pricing => detail chính data
+        if(dataNotOverlap.length === 0){
+          commTaskBlock1Clicked = data.filter(
+            (commTask) => commTask._id.$oid === `${id}`
+          );
+        }else{
+          commTaskBlock1Clicked = dataNotOverlap.filter(
+            (commTask) => commTask._id.$oid === `${id}`
+          );
+        }
+
+        const commTaskBlock2Clicked = data.filter(
           (commTask) => commTask._id.$oid === `${id}`
         );
         const commTaskOverlap = dataOverlap.filter(
@@ -1616,10 +1628,9 @@ const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
           (commTask) => commTask._id.$oid === `${id}`
         );
         insertBtnBack();
-        loadDetailCommTaskBlock1(commTaskClicked);
-        loadDetailCommTaskBlock2(commTaskClicked);
-        loadDetailCommTask(
-          commTaskClicked,
+        loadDetailCommTaskBlock1(commTaskBlock1Clicked);
+        loadDetailCommTaskBlock2(commTaskBlock2Clicked);
+        loadDetailCommTaskBlock3(
           commTaskOverlap,
           commTaskNotOverlap
         );
