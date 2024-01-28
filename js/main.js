@@ -566,6 +566,7 @@ const insertBtnBack = () => {
       } else {
         loadCommTasks_v2(data);
       }
+      
       idCommAfterSubmit = [];
 
       for (let i = 0; i < idComm.length; i++) {
