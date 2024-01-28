@@ -76,7 +76,7 @@ p {
 /* Media query chỉ áp dụng cho màn hình nhỏ hơn hoặc bằng 640px */
 @media screen and (max-width: 640px) {
   .btn_submit {
-    margin-top: 8px; /* Đặt margin-top là 8px khi ở màn hình nhỏ */
+    /* margin-top: 8px;  */
   }
 }
 
@@ -580,9 +580,6 @@ p {
   }
 }
 
-
-
-
 .a1_a2_level,
 .b1_b2_level,
 .c1_c2_level {
@@ -591,3 +588,14 @@ p {
   gap: 20px;
 }
 
+.btnBankBlock {
+  display: inline-block;
+  margin-bottom: 20px
+}
+
+@media (max-width: 576px) {
+  .btnBankBlock {
+  margin-bottom: 0;
+
+  }
+}

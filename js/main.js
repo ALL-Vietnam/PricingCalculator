@@ -544,13 +544,13 @@ loadCommTasks_v2(data);
 const insertBtnBack = () => {
   const detailCommTask = document.querySelector(".detailCommTask");
   const detailBtnBack = document.createElement("div");
-  detailBtnBack.classList.add("btn-back");
+  detailBtnBack.classList.add("btnBankBlock");
   detailCommTask.appendChild(detailBtnBack);
   var detailBtnBackClicked = `
     <input
-    style="height: 100%; margin-top: -20px"
+    style="height: 100%;"
     type="button"
-    class="btn_back btn_submit text-white px-4 py-2 mb-4 rounded-md sm:ml-auto w-auto"
+    class="btn_back btn_submit text-white px-4 py-2 rounded-md sm:ml-auto w-auto"
     title = "Back to list communication task"
     value="Back"
   />
@@ -587,14 +587,14 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
       <div class="row desc-comp-offer-cont-pro">
         <div class="col-md-5 col-sm-12 flex">
           <img
-            style="height: 100px"
+            style="height: 100px; padding-top: 10px"
             src="./img/navbar/logoAll.png"
             class="img-fluid img-center-block align-items-center"
             alt="..."
           />
         </div>
-        <div style="padding: 20px 0;" class="col-md-7 col-sm-12">
-          <h3 style="padding:0" class="name-CommTask"><b>${
+        <div style="padding-bottom: 20px;" class="col-md-7 col-sm-12">
+          <h3 style="padding-left: 10px" class="name-CommTask"><b>${
             commTaskClicked.name
           }</b></h3>
           <div class="detailComm">
@@ -602,8 +602,12 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
             <p class="descCommVN">${commTaskClicked.desc_vi}</p>
           </div>
 
+          <div class="totalSkill flex">
+          <p>Total: ${commTaskClicked.Skills.length} skills</p>
+
+        </div>
+
           <div class="priceComm flex">
-            <p>Total skills: ${commTaskClicked.Skills.length}</p>
             <p>Standard: ${commTaskClicked.costStandard
               .toString()
               .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} đ</p>
