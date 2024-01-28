@@ -541,7 +541,44 @@ const loadCommTasks_v2 = (data) => {
 };
 loadCommTasks_v2(data);
 
+const insertBtnBack = () => {
+  const detailCommTask = document.querySelector(".detailCommTask");
+  const detailBtnBack = document.createElement("div");
+  detailBtnBack.classList.add("btn-back");
+  detailCommTask.appendChild(detailBtnBack);
+  var detailBtnBackClicked = `
+    <input
+    style="height: 100%; margin-top: -20px"
+    type="button"
+    class="btn_back btn_submit text-white px-4 py-2 mb-4 rounded-md sm:ml-auto w-auto"
+    title = "Back to list communication task"
+    value="Back"
+  />
+ `;
+  detailBtnBack.innerHTML = detailBtnBackClicked;
+  const btnBackElement = document.querySelector(".btn_back");
+  if (btnBackElement) {
+    btnBackElement.addEventListener("click", () => {
+      idComm = [];
+      emptyCommTask();
+      if (dataNotOverlap.length > 0) {
+        loadCommTasks_v2(dataNotOverlap);
+      } else {
+        loadCommTasks_v2(data);
+      }
+      idCommAfterSubmit = [];
 
+      for (let i = 0; i < idComm.length; i++) {
+        addCommTaskListener(
+          idComm[i],
+          data,
+          dataOverlap,
+          dataNotOverlap
+        );
+      }
+    });
+  }
+};
 const loadDetailCommTaskBlock1 = (commTaskClicked) => {
   [commTaskClicked] = commTaskClicked;
 
@@ -1526,7 +1563,6 @@ const loadDetailCommTask = (commTaskClicked, dataOverlap, dataNotOverlap) => {
     
     `;
   }
-  console.log(detailCommTaskOverlap);
 
   if (detailCommTaskOverlap !== undefined) {
     detailCommTaskBlock3.innerHTML += detailCommTaskOverlap;
@@ -1565,6 +1601,7 @@ const addCommTaskListener = (id, data, dataOverlap, dataNotOverlap) => {
         const commTaskNotOverlap = dataNotOverlap.filter(
           (commTask) => commTask._id.$oid === `${id}`
         );
+        insertBtnBack();
         loadDetailCommTaskBlock1(commTaskClicked);
         loadDetailCommTaskBlock2(commTaskClicked);
         loadDetailCommTask(
@@ -2018,7 +2055,7 @@ btnPricingCalculation.addEventListener("click", () => {
   idCommAfterSubmit = [];
 
   for (let i = 0; i < idComm.length; i++) {
-    addCommTaskListener(idComm[i], dataNotOverlap, dataOverlap, dataNotOverlap);
+    addCommTaskListener(idComm[i], data, dataOverlap, dataNotOverlap);
   }
 });
 const sortOrderSelect = document.getElementById("sortOrder");
