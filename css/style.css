@@ -559,14 +559,14 @@ p {
   gap: 30px;
 }
 @media (max-width: 1024px) {
-  #items {
+  .tableDetail {
     grid-template-columns: repeat(2, 1fr); /* 2 cột cho màn hình md */
     gap: 20px;
   }
 }
 /* Media query cho màn hình md */
 @media (max-width: 768px) {
-  #items {
+  .tableDetail {
     grid-template-columns: repeat(1, 1fr); /* 2 cột cho màn hình md */
     gap: 20px;
   }
@@ -590,12 +590,43 @@ p {
 
 .btnBankBlock {
   display: inline-block;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 @media (max-width: 576px) {
   .btnBankBlock {
-  margin-bottom: 0;
-
+    margin-bottom: 0;
   }
+}
+.a1_level,
+.a2_level,
+.b1_level,
+.b2_level,
+.c1_level,
+.c2_level {
+  width: 50px;
+}
+
+.tablePrice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.tablePrice > .cefrBlock > .a1_a2_level,
+.b1_b2_level,
+.c1_c2_level {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detailPriceP{
+  font-style: italic;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
