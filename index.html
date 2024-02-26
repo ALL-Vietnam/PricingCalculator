@@ -8,7 +8,7 @@
     <meta name="author" content="All Team" />
 
     <title>ALL Vietnam | Pricing Calculation</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -80,72 +80,85 @@
         <div class="flex flex-col sm:flex-row gap-2 sm:items-center">
           <!-- Phần chọn tùy chọn -->
           <!-- Full Range -->
-          <div class="custom_select sm:mr-2">
-            <div class="select-box">
-              <input type="text" class="tags_input" name="tags" hidden="" />
-              <div class="selected-options">
-                <!-- Các tag ở đây -->
+          <div class="chooseFullrangeBlock">
+            <p style="color: #fff;" class="titleChooseFullRangeBlock">
+              Choosing comm task full range used
+            </p>
+            <div class="custom_select sm:mr-2">
+              <div class="select-box">
+                <input type="text" class="tags_input" name="tags" hidden="" />
+                <div class="selected-options">
+                  <!-- Các tag ở đây -->
+                </div>
+                <div class="arrow">
+                  <i style="color: #64707b" class="fa-solid fa-angle-down"></i>
+                </div>
               </div>
-              <div class="arrow">
-                <i style="color: #64707b" class="fa-solid fa-angle-down"></i>
+              <div class="options">
+                <div class="option-search-tags">
+                  <input
+                    type="text"
+                    class="search-tags"
+                    placeholder="Tìm kiếm Comm Task đã dùng..."
+                  />
+                  <button type="button" class="clear">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </div>
+                <!-- Các option ở đây -->
               </div>
-            </div>
-            <div class="options">
-              <div class="option-search-tags">
-                <input
-                  type="text"
-                  class="search-tags"
-                  placeholder="Tìm kiếm Comm Task đã dùng..."
-                />
-                <button type="button" class="clear">
-                  <i class="fa fa-close"></i>
-                </button>
-              </div>
-              <!-- Các option ở đây -->
-            </div>
+            </div> 
           </div>
           <!-- /////////////////////////////// -->
           <!-- Standard -->
-          <div class="custom_select_standard sm:mr-2">
-            <div class="select-box_standard">
-              <input
-                type="text"
-                class="tags_input_standard"
-                name="tags"
-                hidden=""
-              />
-              <div class="selected-options_standard">
-                <!-- Các tag ở đây -->
-              </div>
-              <div class="arrow">
-                <i style="color: #64707b" class="fa-solid fa-angle-down"></i>
-              </div>
-            </div>
-            <div class="options_standard">
-              <div class="option-search-tags_standard">
+          <div class="chooseStandardBlock">
+            <p style="color: #fff;" class="titleChooseFullRangeBlock">
+              Choosing comm task standard used
+            </p>
+            <div class="custom_select_standard sm:mr-2">
+              <div class="select-box_standard">
                 <input
                   type="text"
-                  class="search-tags_standard"
-                  placeholder="Tìm Comm Task Standard"
+                  class="tags_input_standard"
+                  name="tags"
+                  hidden=""
                 />
-                <button type="button" class="clear">
-                  <i class="fa fa-close"></i>
-                </button>
+                <div class="selected-options_standard">
+                  <!-- Các tag ở đây -->
+                </div>
+                <div class="arrow">
+                  <i style="color: #64707b" class="fa-solid fa-angle-down"></i>
+                </div>
               </div>
-              <!-- Các option ở đây -->
+              <div class="options_standard">
+                <div class="option-search-tags_standard">
+                  <input
+                    type="text"
+                    class="search-tags_standard"
+                    placeholder="Tìm Comm Task Standard"
+                  />
+                  <button type="button" class="clear">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </div>
+                <!-- Các option ở đây -->
+              </div>
             </div>
           </div>
           <!-- Button Pricing Calculation -->
-          <input
-            style="height: 100%"
-            type="button"
-            class="btn_submit text-white px-4 py-2 rounded-md sm:ml-auto w-auto"
-            value="Pricing Calculation"
-          />
+          <div class="btn_submitBlock">
+            <input
+              style="height: 46px"
+              type="button"
+              class="btn_submit text-white px-4 py-2 rounded-md sm:ml-auto w-auto"
+              value="Pricing Calculation"
+            />
+
+          </div>
         </div>
 
         <!-- Phần bên phải -->
-        <div class="sm:mb-0">
+        <div class="sortCommTaskBlock sm:mb-0">
           <select id="sortOrder" class="sortCommTask px-2 py-2 sm:w-auto">
             <option class="sortOption" value="alphabet">
               Sort: Popular

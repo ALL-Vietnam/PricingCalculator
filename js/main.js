@@ -1,11 +1,11 @@
 var data = data.CommsTask;
 // console.log(data);
 const prices = {
-  range6: 640000, //6
-  range5: 560000, //5
-  range4: 80000, //4
-  range3: 50000, //3
-  range2: 25000, //2
+  range6: 640000, //6 C2
+  range5: 560000, //5 C1
+  range4: 80000, //4 B2
+  range3: 50000, //3 B1
+  range2: 25000, //2 A2
   range1: 0, //1
 };
 let idComm = [];
@@ -21,6 +21,12 @@ let commTaskSubSkill;
 let dataNotOverlap = [];
 let dataOverlap = [];
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 // Input tung CommTask
 const skillsCountTypeCommTask = (CommTask) => {
   const sumSkill = { sum: 0 };
@@ -368,13 +374,21 @@ insertCountSkill(data);
 
 // ham tinh tien, tinh tren tung CommTask - FullRange
 function calculateCostFullRange(commTask, prices) {
-  const costFullRange =
+  let costFullRange =
     commTask.countTypeSkillsRange.range_1 * prices.range1 +
     commTask.countTypeSkillsRange.range_2 * prices.range2 +
     commTask.countTypeSkillsRange.range_3 * prices.range3 +
     commTask.countTypeSkillsRange.range_4 * prices.range4 +
     commTask.countTypeSkillsRange.range_5 * prices.range5 +
     commTask.countTypeSkillsRange.range_6 * prices.range6;
+
+  commTask.Skills.forEach(function (skills) {
+    if (skills._id.$oid === "659ac4cbf466a5dfaf3ffe2e") {
+      console.log('true', commTask)
+      costFullRange -= prices.range4;
+    }
+  });
+
   return { costFullRange };
 }
 // dau vao la data => forEach ra tung CommTask
@@ -387,12 +401,19 @@ const insertCalculateCostFullRange = (data, prices) => {
 insertCalculateCostFullRange(data, prices);
 
 function calculateCostStandard(commTask, prices) {
-  const costStandard =
+  let costStandard =
     commTask.countTypeSkillsStandard.range_1 * prices.range1 +
     commTask.countTypeSkillsStandard.range_2 * prices.range2 +
     commTask.countTypeSkillsStandard.range_3 * prices.range3 +
     commTask.countTypeSkillsStandard.range_4 * prices.range4 +
     commTask.countTypeSkillsStandard.range_5 * prices.range5;
+
+    commTask.Skills.forEach(function (skills) {
+      if (skills._id.$oid === "659ac4cbf466a5dfaf3ffe2e") {
+        console.log('true', commTask)
+        costStandard -= prices.range4;
+      }
+    });
   return { costStandard };
 }
 // dau vao la data => forEach ra tung CommTask
@@ -403,7 +424,7 @@ const insertCalculateCostStandard = (data, prices) => {
   });
 };
 insertCalculateCostStandard(data, prices);
-
+// console.log(data)
 // Đặt nội dung cho phần tử mới
 var commTasksEl = document.getElementById("comm_tasks");
 // var commTasksElv2 = document.getElementById("items");
@@ -528,7 +549,7 @@ const loadCommTasks_v2 = (data) => {
             </div>
           </div>
 
-          <button class="btnDetail">Detail</button>
+          <button onclick="scrollToTop()" class="btnDetail">Detail</button>
         </div>
       </div>
     </div>
@@ -550,6 +571,7 @@ const insertBtnBack = () => {
     <input
     style="height: 100%;"
     type="button"
+    onclick="scrollToTop()" 
     class="btn_back btn_submit text-white px-4 py-2 rounded-md sm:ml-auto w-auto"
     title = "Back to list communication task"
     value="Back"
@@ -602,7 +624,9 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
             <p class="descCommVN">${commTaskClicked.desc_vi}</p>
           </div>
           <div class="descCommTotalBlock">
-            <p class="descCommTotal">Total: ${commTaskClicked.Skills.length} skills</p>
+            <p class="descCommTotal">Total: ${
+              commTaskClicked.Skills.length
+            } skills</p>
           </div>
 
           <div class="priceComm flex">
@@ -619,8 +643,6 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
   `;
 
   detailCommTaskBlock1.innerHTML = detailCommTaskBlock1Clicked;
-
-;
 };
 const loadDetailCommTaskBlock2 = (commTaskClicked) => {
   const [commTask] = commTaskClicked;
@@ -650,26 +672,34 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                     <td style=" background-color: #FF0000; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">A1</td>
           
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_l}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_A1_l
+                    }</td>
         
                   </tr>
                   
                   <tr>
                     <!-- R-C2-2 đến R-C2-7 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_r}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_A1_r
+                    }</td>
         
                   </tr>
                   <tr>
                     <!-- S-C2-8 đến S-C2-10 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_s}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_A1_s
+                    }</td>
         
                   </tr>
                   <tr>
                     <!-- STR-C2-11 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_str}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_A1_str
+                    }</td>
         
                   </tr >
                   <tr>
@@ -681,7 +711,9 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                   <tr>
                     <!-- W-C2-16 đến W-C2-23 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A1_w}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_A1_w
+                    }</td>
         
                   </tr>
         
@@ -694,38 +726,50 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                   <td style=" background-color: #FF9900; color: #000; font-weight: bold;padding: 2px 16px;" rowspan="6">A2</td>
         
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_l}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_A2_l
+                  }</td>
 
                 </tr>
                 
                 <tr>
                   <!-- R-C2-2 đến R-C2-7 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_r}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_A2_r
+                  }</td>
 
                 </tr>
                 <tr>
                   <!-- S-C2-8 đến S-C2-10 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_s}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_A2_s
+                  }</td>
 
                 </tr>
                 <tr>
                   <!-- STR-C2-11 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_str}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_A2_str
+                  }</td>
 
                 </tr >
                 <tr>
                   <!-- LQ-C2-12 đến LQ-C2-15 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_lq}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_A2_lq
+                  }</td>
 
                 </tr >
                 <tr>
                   <!-- W-C2-16 đến W-C2-23 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_w}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_A2_w
+                  }</td>
 
                 </tr>
               </tbody>
@@ -739,38 +783,50 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                       
                       <!-- L-B1-1 đến L-B1-6 -->
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_l}</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                        commTask.countTypeSkills.count_B1_l
+                      }</td>
         
                     </tr>
                     
                     <tr>
                       <!-- R-C2-2 đến R-C2-7 -->
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_r}</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                        commTask.countTypeSkills.count_B1_r
+                      }</td>
         
                     </tr>
                     <tr>
                       <!-- S-C2-8 đến S-C2-10 -->
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_s}</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                        commTask.countTypeSkills.count_B1_s
+                      }</td>
         
                     </tr>
                     <tr>
                       <!-- STR-C2-11 -->
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_str}</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                        commTask.countTypeSkills.count_B1_str
+                      }</td>
         
                     </tr >
                     <tr>
                       <!-- LQ-C2-12 đến LQ-C2-15 -->
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B1_lq}</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                        commTask.countTypeSkills.count_B1_lq
+                      }</td>
         
                     </tr >
                     <tr>
                       <!-- W-C2-16 đến W-C2-23 -->
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_A2_w}</td>
+                      <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                        commTask.countTypeSkills.count_A2_w
+                      }</td>
         
                     </tr>
                   </tbody>
@@ -784,37 +840,49 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
         
                   <!-- L-B2-1 đến L-B2-6 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_l}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_B2_l
+                  }</td>
 
                 </tr>
                 
                 <tr>
                   <!-- R-C2-2 đến R-C2-7 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_r}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_B2_r
+                  }</td>
 
                 </tr>
                 <tr>
                   <!-- S-C2-8 đến S-C2-10 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_s}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_B2_s
+                  }</td>
 
                 </tr>
                 <tr>
                   <!-- STR-C2-11 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_str}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_B2_str
+                  }</td>
 
                 </tr >
                 <tr>
                   <!-- LQ-C2-12 đến LQ-C2-15 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_lq}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_B2_lq
+                  }</td>
                 </tr >
                 <tr>
                   <!-- W-C2-16 đến W-C2-23 -->
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_B2_w}</td>
+                  <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                    commTask.countTypeSkills.count_B2_w
+                  }</td>
                 </tr>
               </tbody>
               <!-- B1 -->
@@ -830,33 +898,45 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
           
                     <!-- L-C1-1 đến L-C1-6 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_l}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C1_l
+                    }</td>
                   </tr>
                   
                   <tr>
                     <!-- R-C2-2 đến R-C2-7 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_r}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C1_r
+                    }</td>
                   </tr>
                   <tr>
                     <!-- S-C2-8 đến S-C2-10 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_s}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C1_s
+                    }</td>
                   </tr>
                   <tr>
                     <!-- STR-C2-11 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_str}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C1_str
+                    }</td>
                   </tr >
                   <tr>
                     <!-- LQ-C2-12 đến LQ-C2-15 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_lq}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C1_lq
+                    }</td>
                   </tr >
                   <tr>
                     <!-- W-C2-16 đến W-C2-23 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C1_w}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C1_w
+                    }</td>
                   </tr>
                 </tbody>
               </table>
@@ -868,32 +948,44 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                     <td style=" background-color: #993366; color: #fff; font-weight: bold;padding: 2px 16px;" rowspan="6">C2</td>
                     <!-- L-C2-1 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Listening</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_l}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C2_l
+                    }</td>
                   </tr>
                   <tr>
                     <!-- R-C2-2 đến R-C2-7 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_r}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C2_r
+                    }</td>
                   </tr>
                   <tr>
                     <!-- S-C2-8 đến S-C2-10 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_s}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C2_s
+                    }</td>
                   </tr>
                   <tr>
                     <!-- STR-C2-11 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Strategy</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_str}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C2_str
+                    }</td>
                   </tr >
                   <tr>
                     <!-- LQ-C2-12 đến LQ-C2-15 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_lq}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C2_lq
+                    }</td>
                   </tr >
                   <tr>
                     <!-- W-C2-16 đến W-C2-23 -->
                     <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_C2_w}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_C2_w
+                    }</td>
                   </tr>
                 </tbody>
         
@@ -909,7 +1001,9 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                 <tbody style="background-color: #ff1717;color: #FF0000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
                   <tr style="background-color: #ffd0d3;color: #FF0000;">
                     <td style="background-color: #ff1717; color: #fff; font-size: 12px;width: 172px;" colspan="4">SOCIO-EMOTIONAL DIMENSION</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.count_se}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.count_se
+                    }</td>
 
                   </tr>
                 </tbody>
@@ -924,7 +1018,9 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                 <tbody style="background-color: #5b9bd5;color: #000000; border-collapse: collapse; border: 1px solid #fff; padding: 2px" >
                   <tr style="background-color: #9bc2e6;color: #000000;">
                     <td style="background-color: #5b9bd5;color: #000000; font-size: 12px;width: 172px; " colspan="4">PSYCHOMOTOR DIMENSION</td>
-                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${commTask.countTypeSkills.rangeP}</td>
+                    <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
+                      commTask.countTypeSkills.rangeP
+                    }</td>
 
                   </tr>
                 </tbody>
@@ -1082,6 +1178,10 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
             <p>A1 level is awarded when any communication task is purchased.</p>
           </div>
           <div>
+          <p>Vì tính chất đặc biệt của kỹ năng L-B2-6, nó được miễn phí.</p>
+          <p>Because of the specialized nature of the L-B2-6 skill, it is offered free of charge.</p>
+        </div>
+          <div>
             <p>(!*): Sẽ có giá khác nhau đối với từng kỹ năng của PSYCHOMOTOR DIMENSION.</p>
             <p>(!*): Different prices will apply for each skill in the PSYCHOMOTOR DIMENSION.</p>
           </div>
@@ -1092,9 +1192,6 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
   </div>
 </div>
 `;
-
-
-
 
   detailCommTaskBlock2.innerHTML += detailCommTaskBlock2Clicked;
 };
@@ -1858,7 +1955,7 @@ function updateSelectedOptions(customSelect) {
   let tagsHTML = "";
   if (selectedValues.length === 0) {
     tagsHTML =
-      '<p style="font-size: 14px" class="placeholder">Choosing comm task full range used</p>';
+      '<p style="font-size: 14px" class="placeholder"></p>';
   } else {
     const maxTagsToShow = 1;
     let additionalTagsCount = 0;
@@ -1999,14 +2096,14 @@ function updateSelectedOptionsStandard(customSelect) {
   let tagsHTML = "";
   if (selectedValuesStandard.length === 0) {
     tagsHTML =
-      '<p style="font-size: 14px" class="placeholder">Choosing comm task standard used</p>';
+      '<p style="font-size: 14px" class="placeholder"></p>';
   } else {
     const maxTagsToShow = 1;
     let additionalTagsCount = 0;
 
     selectionOptionsStandard.forEach(function (option, index) {
       if (index < maxTagsToShow) {
-        tagsHTML += `<span style="font-size: 14px" class="tag">${option.text} <span class="remove-tag" data-value="${option.value}">&times;</span></span>`;
+        tagsHTML += `<span style="font-size: 14px" class="tag">${option.text} <span class="remove-tag" data-value_standard="${option.value}">&times;</span></span>`;
       } else {
         additionalTagsCount++;
       }
@@ -2068,18 +2165,18 @@ document.addEventListener("click", function (e) {
   const removeTag = e.target.closest(".remove-tag");
   // console.log(removeTag, "f");
   if (removeTag) {
-    const customSelect = removeTag.closest(".custom_select_standard");
+    const customSelectStandard = removeTag.closest(".custom_select_standard");
     // console.log(customSelect, " a");
-    const valueToRemove = removeTag.getAttribute("data-value_standard");
-    const escapedValue = CSS.escape(valueToRemove);
+    const valueToRemoveStandard = removeTag.getAttribute("data-value_standard");
+    const escapedValueStandard = CSS.escape(valueToRemoveStandard);
 
-    const optionToRemove = customSelect.querySelector(
-      `.option_standard[data-value_standard="${escapedValue}"]`
+    const optionToRemoveStandard = customSelectStandard.querySelector(
+      `.option_standard[data-value_standard="${escapedValueStandard}"]`
     );
     // console.log(optionToRemove, "c");
-    optionToRemove.classList.remove("active");
+    optionToRemoveStandard.classList.remove("active");
 
-    updateSelectedOptionsStandard(customSelect);
+    updateSelectedOptionsStandard(customSelectStandard);
   }
 });
 

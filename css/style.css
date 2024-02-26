@@ -198,9 +198,16 @@ p {
 .option_standard:hover {
   background-color: #d9d9d9;
 }
-
+.btn_submitBlock{
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
 .btn_submit {
   cursor: pointer;
+}
+.btn_submit {
+
 }
 
 #comp-offer {
@@ -279,6 +286,10 @@ p {
 }
 
 /* CSS cho select với class sortCommTask */
+.sortCommTaskBlock{
+  display: flex;
+  align-items: flex-end;
+}
 .sortCommTask {
   padding: 4px; /* Khoảng cách giữa nội dung và viền */
   border: 1px solid #ccc; /* Viền */
@@ -286,7 +297,6 @@ p {
   outline: none; /* Loại bỏ viền focus (nếu có) */
   font-size: 14px; /* Kích thước chữ */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X, Y, độ mờ, màu bóng */
-  margin: auto;
 }
 
 /* Hover effect */
@@ -629,4 +639,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+
+.chooseFullrangeBlock, .chooseStandardBlock{
+  width: 380px;
 }
