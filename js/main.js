@@ -1955,7 +1955,7 @@ function updateSelectedOptions(customSelect) {
   let tagsHTML = "";
   if (selectedValues.length === 0) {
     tagsHTML =
-      '<p style="font-size: 14px" class="placeholder"></p>';
+      '<p style="font-size: 14px" class="placeholder">Communication task...</p>';
   } else {
     const maxTagsToShow = 1;
     let additionalTagsCount = 0;
@@ -2096,7 +2096,7 @@ function updateSelectedOptionsStandard(customSelect) {
   let tagsHTML = "";
   if (selectedValuesStandard.length === 0) {
     tagsHTML =
-      '<p style="font-size: 14px" class="placeholder"></p>';
+      '<p style="font-size: 14px" class="placeholder">Communication task...</p>';
   } else {
     const maxTagsToShow = 1;
     let additionalTagsCount = 0;
