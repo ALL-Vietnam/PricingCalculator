@@ -642,6 +642,6 @@ p {
 }
 
 
-.chooseFullrangeBlock, .chooseStandardBlock{
-  width: 380px;
+.chooseFullRangeBlock, .chooseStandardBlock{
+  width: 320px;
 }

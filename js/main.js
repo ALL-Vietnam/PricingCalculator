@@ -549,7 +549,7 @@ const loadCommTasks_v2 = (data) => {
             </div>
           </div>
 
-          <button onclick="scrollToTop()" class="btnDetail">Detail</button>
+          <button onclick="scrollToTop()" class="btnDetail">Mô tả</button>
         </div>
       </div>
     </div>
@@ -574,7 +574,7 @@ const insertBtnBack = () => {
     onclick="scrollToTop()" 
     class="btn_back btn_submit text-white px-4 py-2 rounded-md sm:ml-auto w-auto"
     title = "Back to list communication task"
-    value="Back"
+    value="Trở về"
   />
  `;
   detailBtnBack.innerHTML = detailBtnBackClicked;
@@ -1955,7 +1955,7 @@ function updateSelectedOptions(customSelect) {
   let tagsHTML = "";
   if (selectedValues.length === 0) {
     tagsHTML =
-      '<p style="font-size: 14px" class="placeholder">Communication task...</p>';
+      '<p style="font-size: 14px" class="placeholder">Communication task full range...</p>';
   } else {
     const maxTagsToShow = 1;
     let additionalTagsCount = 0;
@@ -2096,7 +2096,7 @@ function updateSelectedOptionsStandard(customSelect) {
   let tagsHTML = "";
   if (selectedValuesStandard.length === 0) {
     tagsHTML =
-      '<p style="font-size: 14px" class="placeholder">Communication task...</p>';
+      '<p style="font-size: 14px" class="placeholder">Communication task standard...</p>';
   } else {
     const maxTagsToShow = 1;
     let additionalTagsCount = 0;
