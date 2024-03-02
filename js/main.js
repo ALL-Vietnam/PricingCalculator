@@ -1805,6 +1805,8 @@ const loadDetailCommTaskBlock3 = (dataOverlap, dataNotOverlap) => {
               </div>
             </div>
      
+            
+            
             <div class="plBlock">
               <div class="pl" style="display: flex; flex-direction: column; gap: 20px;">
               <!-- P-L -->
