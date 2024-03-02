@@ -5416,7 +5416,7 @@ var data = {
       "$oid": "659a3b8e350a38ec3e02124c"
     },
     "name": "Communication task 6",
-    "desc_en": "Conduction Data Analysis and Reporting.",
+    "desc_en": "Conducting Data Analysis and Reporting.",
     "desc_vi": "Phân tích và báo cáo dữ liệu dẫn truyền.",
 
     "Skills": [
