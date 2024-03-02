@@ -5417,7 +5417,7 @@ var data = {
     },
     "name": "Communication task 6",
     "desc_en": "Conducting Data Analysis and Reporting.",
-    "desc_vi": "Phân tích và báo cáo dữ liệu dẫn truyền.",
+    "desc_vi": "Thực hiện phân tích dữ liệu và báo cáo.",
 
     "Skills": [
       {
