@@ -383,7 +383,7 @@ function calculateCostFullRange(commTask, prices) {
     commTask.countTypeSkillsRange.range_6 * prices.range6;
 
   commTask.Skills.forEach(function (skills) {
-    if (skills._id.$oid === "659ac4cbf466a5dfaf3ffe2e") {
+    if (skills._id.$oid === "65ef253b465cd988729bf257") {
       console.log('true', commTask)
       costFullRange -= prices.range4;
     }
@@ -409,7 +409,7 @@ function calculateCostStandard(commTask, prices) {
     commTask.countTypeSkillsStandard.range_5 * prices.range5;
 
     commTask.Skills.forEach(function (skills) {
-      if (skills._id.$oid === "659ac4cbf466a5dfaf3ffe2e") {
+      if (skills._id.$oid === "65ef253b465cd988729bf257") {
         console.log('true', commTask)
         costStandard -= prices.range4;
       }
