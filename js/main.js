@@ -95,6 +95,7 @@ const skillsCountTypeCommTask = (CommTask) => {
     count_P_range5: 0,
     count_P_range: 0,
   };
+  console.log(CommTask)
   CommTask.Skills.forEach(function (skill) {
     if (skill.cefrlevel === "A1") {
       if (skill.skillType === "listening") {
@@ -790,7 +791,7 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                     </tr>
                     
                     <tr>
-                      <!-- R-C2-2 đến R-C2-7 -->
+                      
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">Reading</td>
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
                         commTask.countTypeSkills.count_B1_r
@@ -798,7 +799,7 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
         
                     </tr>
                     <tr>
-                      <!-- S-C2-8 đến S-C2-10 -->
+                      
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Speaking</td>
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
                         commTask.countTypeSkills.count_B1_s
@@ -814,7 +815,7 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
         
                     </tr >
                     <tr>
-                      <!-- LQ-C2-12 đến LQ-C2-15 -->
+                      
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Language quality</td>
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
                         commTask.countTypeSkills.count_B1_lq
@@ -822,10 +823,10 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
         
                     </tr >
                     <tr>
-                      <!-- W-C2-16 đến W-C2-23 -->
+                      
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left;">Writing</td>
                       <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: center; width: 30px">${
-                        commTask.countTypeSkills.count_A2_w
+                        commTask.countTypeSkills.count_B1_w
                       }</td>
         
                     </tr>
