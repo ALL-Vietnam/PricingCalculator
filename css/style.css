@@ -645,3 +645,14 @@ p {
 .chooseFullRangeBlock, .chooseStandardBlock{
   width: 320px;
 }
+
+.descCommTable {
+  border-collapse: collapse;
+}
+
+.descCommTable td, .descCommTable th {
+  border: 1px solid #64707b;
+}
+.descCommTable tr:first-child {
+  text-align: center;
+}

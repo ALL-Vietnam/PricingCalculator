@@ -629,15 +629,39 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
               commTaskClicked.Skills.length
             } skills</p>
           </div>
+          <div style="padding-left: 10px">
+            <table class="descCommTable">
+              <tr >
+                <td><p style ="font-weight: bold">Gói dịch vụ</p></td>
+                <td><p style ="font-weight: bold">Giá</p></td>
+                <td><p style ="font-weight: bold">Mã</p></td>
 
-          <div class="priceComm flex">
-            <p>Standard: ${commTaskClicked.costStandard
-              .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} đ</p>
-            <p>Full Range: ${commTaskClicked.costFullRange
-              .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} đ</p>
+              </tr>
+              <tr>
+                <td><p>Standard</p></td>
+                <td>
+                <p  style="text-align: end;">${commTaskClicked.costStandard
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} đ
+                  </p>
+                </td>
+                <td style="text-align: center;"><p>S${commTaskClicked.id}</p></td>
+                
+              </tr>
+              <tr>
+              <td><p>Full Range</p></td>
+              <td>
+                <p  style="text-align: end;">${commTaskClicked.costFullRange
+                .toString()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} đ
+                </p>
+              </td>
+                <td  style="text-align: center;"><p>F${commTaskClicked.id}</p></td>
+              </tr>
+
+            </table>
           </div>
+
         </div>
       </div>
     </div>
