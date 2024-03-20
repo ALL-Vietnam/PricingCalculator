@@ -1,4 +1,5 @@
 var data = data.CommsTask;
+const discountPricing = 0.6;
 // console.log(data);
 const prices = {
   range6: 640000, //6 C2
@@ -389,7 +390,7 @@ function calculateCostFullRange(commTask, prices) {
       costFullRange -= prices.range4;
     }
   });
-
+  costFullRange = costFullRange - costFullRange * discountPricing
   return { costFullRange };
 }
 // dau vao la data => forEach ra tung CommTask
@@ -415,6 +416,7 @@ function calculateCostStandard(commTask, prices) {
         costStandard -= prices.range4;
       }
     });
+    costStandard = costStandard - costStandard * discountPricing;
   return { costStandard };
 }
 // dau vao la data => forEach ra tung CommTask
