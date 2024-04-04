@@ -1,7 +1,7 @@
 var data = data.CommsTask;
 const discountPricing = 0.6;
 // console.log(data);
-const prices = {
+let prices = {
   range6: 640000, //6 C2
   range5: 560000, //5 C1
   range4: 80000, //4 B2
@@ -9,6 +9,13 @@ const prices = {
   range2: 25000, //2 A2
   range1: 0, //1
 };
+const discountedPrices = {};
+for (const key in prices) {
+  if (prices.hasOwnProperty(key)) {
+    prices[key] = prices[key] -  prices[key] * 0.6;
+  }
+}
+
 let idComm = [];
 let idCommOverlap = [];
 let arrayIDCommTaskUsed;
@@ -390,7 +397,7 @@ function calculateCostFullRange(commTask, prices) {
       costFullRange -= prices.range4;
     }
   });
-  costFullRange = costFullRange - costFullRange * discountPricing
+  costFullRange = costFullRange
   return { costFullRange };
 }
 // dau vao la data => forEach ra tung CommTask
@@ -416,7 +423,7 @@ function calculateCostStandard(commTask, prices) {
         costStandard -= prices.range4;
       }
     });
-    costStandard = costStandard - costStandard * discountPricing;
+    costStandard = costStandard
   return { costStandard };
 }
 // dau vao la data => forEach ra tung CommTask
@@ -1087,7 +1094,7 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
                   <td title="" style="border-collapse: collapse; border: 2px solid #fff; padding: 2px 6px;text-align: left">
                   ${prices.range2
                     .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} đ/skill
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",") } đ/skill
                   
                   </td>
                 </tr>

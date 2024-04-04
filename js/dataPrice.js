@@ -1120,719 +1120,719 @@ var data = {
       }
     ]
   },
-  {
-    "_id": {
-      "$oid": "65ef28c1465cd988729bf307"
-    },
-    "name": "Communication task 1.1",
-    "id": "001.1",
-    "desc_en": "Communicating with Clients/Customers-Waiter/waitress focused.",
-    "desc_vi": "Giao tiếp với khách hàng-tập trung vào nhân viên phục vụ/bồi bàn.",
-    "Skills": [
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf27b"
-        },
-        "id": "L-B1-1",
-        "name": "CEFR-L-B1-1",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf27c"
-        },
-        "id": "L-B1-2",
-        "name": "CEFR-L-B1-2",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf27d"
-        },
-        "id": "L-B1-3",
-        "name": "CEFR-L-B1-3",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf286"
-        },
-        "id": "R-B1-12",
-        "name": "CEFR-R-B1-12",
-        "skilltypesID": "cefr",
-        "skillType": "reading",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf289"
-        },
-        "id": "S-B1-15",
-        "name": "CEFR-S-B1-15",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf28c"
-        },
-        "id": "S-B1-18",
-        "name": "CEFR-S-B1-18",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf28d"
-        },
-        "id": "S-B1-19",
-        "name": "CEFR-S-B1-19",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf28f"
-        },
-        "id": "S-B1-21",
-        "name": "CEFR-S-B1-21",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf293"
-        },
-        "id": "S-B1-25",
-        "name": "CEFR-S-B1-25",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf296"
-        },
-        "id": "STR-B1-28",
-        "name": "CEFR-STR-B1-28",
-        "skilltypesID": "cefr",
-        "skillType": "strategy",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf297"
-        },
-        "id": "STR-B1-29",
-        "name": "CEFR-STR-B1-29",
-        "skilltypesID": "cefr",
-        "skillType": "strategy",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf29a"
-        },
-        "id": "LQ-B1-32",
-        "name": "CEFR-LQ-B1-32",
-        "skilltypesID": "cefr",
-        "skillType": "language quality",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf29b"
-        },
-        "id": "LQ-B1-33",
-        "name": "CEFR-LQ-B1-33",
-        "skilltypesID": "cefr",
-        "skillType": "language quality",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf29c"
-        },
-        "id": "LQ-B1-34",
-        "name": "CEFR-LQ-B1-34",
-        "skilltypesID": "cefr",
-        "skillType": "language quality",
-        "cefrlevel": "B1",
-        "range": 3,
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2a3"
-        },
-        "id": "L-A2-1",
-        "name": "CEFR-L-A2-1",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2a4"
-        },
-        "id": "L-A2-2",
-        "name": "CEFR-L-A2-2",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2a5"
-        },
-        "id": "L-A2-3",
-        "name": "CEFR-L-A2-3",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2bb"
-        },
-        "id": "S-A2-25",
-        "name": "CEFR-S-A2-25",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c0"
-        },
-        "id": "S-A2-30",
-        "name": "CEFR-S-A2-30",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c1"
-        },
-        "id": "S-A2-31",
-        "name": "CEFR-S-A2-31",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c2"
-        },
-        "id": "STR-A2-32",
-        "name": "CEFR-STR-A2-32",
-        "skilltypesID": "cefr",
-        "skillType": "strategy",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c3"
-        },
-        "id": "STR-A2-33",
-        "name": "CEFR-STR-A2-33",
-        "skilltypesID": "cefr",
-        "skillType": "strategy",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c4"
-        },
-        "id": "STR-A2-34",
-        "name": "CEFR-STR-A2-34",
-        "skilltypesID": "cefr",
-        "skillType": "strategy",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c5"
-        },
-        "id": "LQ-A2-35",
-        "name": "CEFR-LQ-A2-35",
-        "skilltypesID": "cefr",
-        "skillType": "language quality",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c6"
-        },
-        "id": "LQ-A2-36",
-        "name": "CEFR-LQ-A2-36",
-        "skilltypesID": "cefr",
-        "skillType": "language quality",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c7"
-        },
-        "id": "LQ-A2-37",
-        "name": "CEFR-LQ-A2-37",
-        "skilltypesID": "cefr",
-        "skillType": "language quality",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c8"
-        },
-        "id": "LQ-A2-38",
-        "name": "CEFR-LQ-A2-38",
-        "skilltypesID": "cefr",
-        "skillType": "language quality",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2c9"
-        },
-        "id": "W-A2-39",
-        "name": "CEFR-W-A2-39",
-        "skilltypesID": "cefr",
-        "skillType": "writing",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2cf"
-        },
-        "id": "W-A2-45",
-        "name": "CEFR-W-A2-45",
-        "skilltypesID": "cefr",
-        "skillType": "writing",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2d0"
-        },
-        "id": "W-A2-46",
-        "name": "CEFR-W-A2-46",
-        "skilltypesID": "cefr",
-        "skillType": "writing",
-        "cefrlevel": "A2",
-        "range": 2,
-        "price": 25000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2d1"
-        },
-        "id": "L-A1-1",
-        "name": "CEFR-L-A1-1",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2d3"
-        },
-        "id": "L-A1-3",
-        "name": "CEFR-L-A1-3",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2d4"
-        },
-        "id": "L-A1-4",
-        "name": "CEFR-L-A1-4",
-        "skilltypesID": "cefr",
-        "skillType": "listening",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2d6"
-        },
-        "id": "R-A1-6",
-        "name": "CEFR-R-A1-6",
-        "skilltypesID": "cefr",
-        "skillType": "reading",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2d9"
-        },
-        "id": "R-A1-9",
-        "name": "CEFR-R-A1-9",
-        "skilltypesID": "cefr",
-        "skillType": "reading",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2dc"
-        },
-        "id": "R-A1-12",
-        "name": "CEFR-R-A1-12",
-        "skilltypesID": "cefr",
-        "skillType": "reading",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2dd"
-        },
-        "id": "S-A1-13",
-        "name": "CEFR-S-A1-13",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2de"
-        },
-        "id": "S-A1-14",
-        "name": "CEFR-S-A1-14",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2df"
-        },
-        "id": "S-A1-15",
-        "name": "CEFR-S-A1-15",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2e1"
-        },
-        "id": "S-A1-17",
-        "name": "CEFR-S-A1-17",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2e3"
-        },
-        "id": "S-A1-19",
-        "name": "CEFR-S-A1-19",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2e4"
-        },
-        "id": "S-A1-20",
-        "name": "CEFR-S-A1-20",
-        "skilltypesID": "cefr",
-        "skillType": "speaking",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2e7"
-        },
-        "id": "STR-A1-23",
-        "name": "CEFR-STR-A1-23",
-        "skilltypesID": "cefr",
-        "skillType": "strategy",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2e8"
-        },
-        "id": "STR-A1-24",
-        "name": "CEFR-STR-A1-24",
-        "skilltypesID": "cefr",
-        "skillType": "strategy",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2e9"
-        },
-        "id": "STR-A1-25",
-        "name": "CEFR-STR-A1-25",
-        "skilltypesID": "cefr",
-        "skillType": "strategy",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2ec"
-        },
-        "id": "W-A1-28",
-        "name": "CEFR-W-A1-28",
-        "skilltypesID": "cefr",
-        "skillType": "writing",
-        "cefrlevel": "A1",
-        "range": 1,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2ee"
-        },
-        "id": "SE-L-1",
-        "name": "CEFR-SE-L-1",
-        "skilltypesID": "se",
-        "range": 0,
-        "price": 0
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2ef"
-        },
-        "id": "P-L-1",
-        "name": "CEFR-P-L-1",
-        "skilltypesID": "psychomotor",
-        "range": "4_P",
-        "price": 80000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f0"
-        },
-        "id": "P-L-2",
-        "name": "CEFR-P-L-2",
-        "skilltypesID": "psychomotor",
-        "range": "4_P",
-        "price": 80000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f1"
-        },
-        "id": "P-L-3",
-        "name": "CEFR-P-L-3",
-        "skilltypesID": "psychomotor",
-        "range": "4_P",
-        "price": 80000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f2"
-        },
-        "id": "P-L-4",
-        "name": "CEFR-P-L-4",
-        "skilltypesID": "psychomotor",
-        "range": "4_P",
-        "price": 80000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f3"
-        },
-        "id": "P-L-5",
-        "name": "CEFR-P-L-5",
-        "skilltypesID": "psychomotor",
-        "range": "3_P",
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f4"
-        },
-        "id": "P-L-6",
-        "name": "CEFR-P-L-6",
-        "skilltypesID": "psychomotor",
-        "range": "3_P",
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f5"
-        },
-        "id": "P-L-7",
-        "name": "CEFR-P-L-7",
-        "skilltypesID": "psychomotor",
-        "range": "4_P",
-        "price": 80000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f6"
-        },
-        "id": "P-L-8",
-        "name": "CEFR-P-L-8",
-        "skilltypesID": "psychomotor",
-        "range": "3_P",
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f7"
-        },
-        "id": "P-L-9",
-        "name": "CEFR-P-L-9",
-        "skilltypesID": "psychomotor",
-        "range": "5_P",
-        "price": 560000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f8"
-        },
-        "id": "P-L-10",
-        "name": "CEFR-P-L-10",
-        "skilltypesID": "psychomotor",
-        "range": "5_P",
-        "price": 560000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2f9"
-        },
-        "id": "P-L-11",
-        "name": "CEFR-P-L-11",
-        "skilltypesID": "psychomotor",
-        "range": "5_P",
-        "price": 560000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2fa"
-        },
-        "id": "P-L-12",
-        "name": "CEFR-P-L-12",
-        "skilltypesID": "psychomotor",
-        "range": "4_P",
-        "price": 80000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2fb"
-        },
-        "id": "P-L-13",
-        "name": "CEFR-P-L-13",
-        "skilltypesID": "psychomotor",
-        "range": "3_P",
-        "price": 50000
-      },
-      {
-        "_id": {
-          "$oid": "65ef253b465cd988729bf2fc"
-        },
-        "id": "P-L-14",
-        "name": "CEFR-P-L-14",
-        "skilltypesID": "psychomotor",
-        "range": "4_P",
-        "price": 80000
-      }
-    ]
-  },
+  // {
+  //   "_id": {
+  //     // "$oid": "65ef28c1465cd988729bf307"
+  //   },
+  //   "name": "Communication task 1.1",
+  //   "id": "001.1",
+  //   "desc_en": "Communicating with Clients/Customers-Waiter/waitress focused.",
+  //   "desc_vi": "Giao tiếp với khách hàng-tập trung vào nhân viên phục vụ/bồi bàn.",
+  //   "Skills": [
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf27b"
+  //       },
+  //       "id": "L-B1-1",
+  //       "name": "CEFR-L-B1-1",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf27c"
+  //       },
+  //       "id": "L-B1-2",
+  //       "name": "CEFR-L-B1-2",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf27d"
+  //       },
+  //       "id": "L-B1-3",
+  //       "name": "CEFR-L-B1-3",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf286"
+  //       },
+  //       "id": "R-B1-12",
+  //       "name": "CEFR-R-B1-12",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "reading",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf289"
+  //       },
+  //       "id": "S-B1-15",
+  //       "name": "CEFR-S-B1-15",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf28c"
+  //       },
+  //       "id": "S-B1-18",
+  //       "name": "CEFR-S-B1-18",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf28d"
+  //       },
+  //       "id": "S-B1-19",
+  //       "name": "CEFR-S-B1-19",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf28f"
+  //       },
+  //       "id": "S-B1-21",
+  //       "name": "CEFR-S-B1-21",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf293"
+  //       },
+  //       "id": "S-B1-25",
+  //       "name": "CEFR-S-B1-25",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf296"
+  //       },
+  //       "id": "STR-B1-28",
+  //       "name": "CEFR-STR-B1-28",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "strategy",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf297"
+  //       },
+  //       "id": "STR-B1-29",
+  //       "name": "CEFR-STR-B1-29",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "strategy",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf29a"
+  //       },
+  //       "id": "LQ-B1-32",
+  //       "name": "CEFR-LQ-B1-32",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "language quality",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf29b"
+  //       },
+  //       "id": "LQ-B1-33",
+  //       "name": "CEFR-LQ-B1-33",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "language quality",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf29c"
+  //       },
+  //       "id": "LQ-B1-34",
+  //       "name": "CEFR-LQ-B1-34",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "language quality",
+  //       "cefrlevel": "B1",
+  //       "range": 3,
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2a3"
+  //       },
+  //       "id": "L-A2-1",
+  //       "name": "CEFR-L-A2-1",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2a4"
+  //       },
+  //       "id": "L-A2-2",
+  //       "name": "CEFR-L-A2-2",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2a5"
+  //       },
+  //       "id": "L-A2-3",
+  //       "name": "CEFR-L-A2-3",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2bb"
+  //       },
+  //       "id": "S-A2-25",
+  //       "name": "CEFR-S-A2-25",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c0"
+  //       },
+  //       "id": "S-A2-30",
+  //       "name": "CEFR-S-A2-30",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c1"
+  //       },
+  //       "id": "S-A2-31",
+  //       "name": "CEFR-S-A2-31",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c2"
+  //       },
+  //       "id": "STR-A2-32",
+  //       "name": "CEFR-STR-A2-32",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "strategy",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c3"
+  //       },
+  //       "id": "STR-A2-33",
+  //       "name": "CEFR-STR-A2-33",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "strategy",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c4"
+  //       },
+  //       "id": "STR-A2-34",
+  //       "name": "CEFR-STR-A2-34",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "strategy",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c5"
+  //       },
+  //       "id": "LQ-A2-35",
+  //       "name": "CEFR-LQ-A2-35",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "language quality",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c6"
+  //       },
+  //       "id": "LQ-A2-36",
+  //       "name": "CEFR-LQ-A2-36",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "language quality",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c7"
+  //       },
+  //       "id": "LQ-A2-37",
+  //       "name": "CEFR-LQ-A2-37",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "language quality",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c8"
+  //       },
+  //       "id": "LQ-A2-38",
+  //       "name": "CEFR-LQ-A2-38",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "language quality",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2c9"
+  //       },
+  //       "id": "W-A2-39",
+  //       "name": "CEFR-W-A2-39",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "writing",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2cf"
+  //       },
+  //       "id": "W-A2-45",
+  //       "name": "CEFR-W-A2-45",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "writing",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2d0"
+  //       },
+  //       "id": "W-A2-46",
+  //       "name": "CEFR-W-A2-46",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "writing",
+  //       "cefrlevel": "A2",
+  //       "range": 2,
+  //       "price": 25000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2d1"
+  //       },
+  //       "id": "L-A1-1",
+  //       "name": "CEFR-L-A1-1",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2d3"
+  //       },
+  //       "id": "L-A1-3",
+  //       "name": "CEFR-L-A1-3",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2d4"
+  //       },
+  //       "id": "L-A1-4",
+  //       "name": "CEFR-L-A1-4",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "listening",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2d6"
+  //       },
+  //       "id": "R-A1-6",
+  //       "name": "CEFR-R-A1-6",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "reading",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2d9"
+  //       },
+  //       "id": "R-A1-9",
+  //       "name": "CEFR-R-A1-9",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "reading",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2dc"
+  //       },
+  //       "id": "R-A1-12",
+  //       "name": "CEFR-R-A1-12",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "reading",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2dd"
+  //       },
+  //       "id": "S-A1-13",
+  //       "name": "CEFR-S-A1-13",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2de"
+  //       },
+  //       "id": "S-A1-14",
+  //       "name": "CEFR-S-A1-14",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2df"
+  //       },
+  //       "id": "S-A1-15",
+  //       "name": "CEFR-S-A1-15",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2e1"
+  //       },
+  //       "id": "S-A1-17",
+  //       "name": "CEFR-S-A1-17",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2e3"
+  //       },
+  //       "id": "S-A1-19",
+  //       "name": "CEFR-S-A1-19",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2e4"
+  //       },
+  //       "id": "S-A1-20",
+  //       "name": "CEFR-S-A1-20",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "speaking",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2e7"
+  //       },
+  //       "id": "STR-A1-23",
+  //       "name": "CEFR-STR-A1-23",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "strategy",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2e8"
+  //       },
+  //       "id": "STR-A1-24",
+  //       "name": "CEFR-STR-A1-24",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "strategy",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2e9"
+  //       },
+  //       "id": "STR-A1-25",
+  //       "name": "CEFR-STR-A1-25",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "strategy",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2ec"
+  //       },
+  //       "id": "W-A1-28",
+  //       "name": "CEFR-W-A1-28",
+  //       "skilltypesID": "cefr",
+  //       "skillType": "writing",
+  //       "cefrlevel": "A1",
+  //       "range": 1,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2ee"
+  //       },
+  //       "id": "SE-L-1",
+  //       "name": "CEFR-SE-L-1",
+  //       "skilltypesID": "se",
+  //       "range": 0,
+  //       "price": 0
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2ef"
+  //       },
+  //       "id": "P-L-1",
+  //       "name": "CEFR-P-L-1",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "4_P",
+  //       "price": 80000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f0"
+  //       },
+  //       "id": "P-L-2",
+  //       "name": "CEFR-P-L-2",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "4_P",
+  //       "price": 80000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f1"
+  //       },
+  //       "id": "P-L-3",
+  //       "name": "CEFR-P-L-3",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "4_P",
+  //       "price": 80000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f2"
+  //       },
+  //       "id": "P-L-4",
+  //       "name": "CEFR-P-L-4",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "4_P",
+  //       "price": 80000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f3"
+  //       },
+  //       "id": "P-L-5",
+  //       "name": "CEFR-P-L-5",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "3_P",
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f4"
+  //       },
+  //       "id": "P-L-6",
+  //       "name": "CEFR-P-L-6",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "3_P",
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f5"
+  //       },
+  //       "id": "P-L-7",
+  //       "name": "CEFR-P-L-7",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "4_P",
+  //       "price": 80000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f6"
+  //       },
+  //       "id": "P-L-8",
+  //       "name": "CEFR-P-L-8",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "3_P",
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f7"
+  //       },
+  //       "id": "P-L-9",
+  //       "name": "CEFR-P-L-9",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "5_P",
+  //       "price": 560000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f8"
+  //       },
+  //       "id": "P-L-10",
+  //       "name": "CEFR-P-L-10",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "5_P",
+  //       "price": 560000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2f9"
+  //       },
+  //       "id": "P-L-11",
+  //       "name": "CEFR-P-L-11",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "5_P",
+  //       "price": 560000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2fa"
+  //       },
+  //       "id": "P-L-12",
+  //       "name": "CEFR-P-L-12",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "4_P",
+  //       "price": 80000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2fb"
+  //       },
+  //       "id": "P-L-13",
+  //       "name": "CEFR-P-L-13",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "3_P",
+  //       "price": 50000
+  //     },
+  //     {
+  //       "_id": {
+  //         "$oid": "65ef253b465cd988729bf2fc"
+  //       },
+  //       "id": "P-L-14",
+  //       "name": "CEFR-P-L-14",
+  //       "skilltypesID": "psychomotor",
+  //       "range": "4_P",
+  //       "price": 80000
+  //     }
+  //   ]
+  // },
   {
     "_id": {
       "$oid": "65ef28c1465cd988729bf308"
