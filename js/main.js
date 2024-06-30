@@ -459,7 +459,7 @@ const loadCommTasks = (data) => {
           <div class="col-md-5 col-sm-12 flex">
             <img
               style="height: 100px"
-              src="./img/navbar/logoAll.png"
+              src="./img/Logo/Asset1625.png"
               class="img-fluid img-center-block align-items-center"
               alt="..."
             />
@@ -620,7 +620,7 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
         <div class="col-md-5 col-sm-12 flex">
           <img
             style="height: 100px; padding-top: 10px"
-            src="./img/navbar/logoAll.png"
+            src="./img/Logo/Asset1625.png"
             class="img-fluid img-center-block align-items-center"
             alt="..."
           />
