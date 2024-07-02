@@ -60,10 +60,10 @@ p {
   width: fit-content; /* Đặt chiều rộng dựa trên nội dung */
 }
 .btn_submit {
-  background: #266b94;
+  background: #226084;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X, Y, độ mờ, màu bóng */
   transition: background-color 0.3s ease;
-  border: 1px solid #666;
+  border: 1px solid #226084;
 }
 .btn_submit:hover {
   border-color: #ccc;
