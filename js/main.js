@@ -459,7 +459,7 @@ const loadCommTasks = (data) => {
           <div class="col-md-5 col-sm-12 flex">
             <img
               style="height: 100px"
-              src="./img/Logo/Asset1625.png"
+              src="./img/LogoSet/Vertical/4@25x.png"
               class="img-fluid img-center-block align-items-center"
               alt="..."
             />
@@ -619,8 +619,8 @@ const loadDetailCommTaskBlock1 = (commTaskClicked) => {
       <div class="row desc-comp-offer-cont-pro">
         <div class="col-md-5 col-sm-12 flex">
           <img
-            style="height: 100px; padding-top: 10px"
-            src="./img/Logo/Asset1625.png"
+            style="height: 200px; padding-top: 0px"
+            src="./img/LogoSet/Vertical/4@25x.png"
             class="img-fluid img-center-block align-items-center"
             alt="..."
           />
@@ -1206,20 +1206,7 @@ const loadDetailCommTaskBlock2 = (commTaskClicked) => {
           </div>
 
         </div>
-        <div class="detailPriceP">
-          <div>
-            <p>A1 level được tặng khi bất kì communication task nào được mua.</p>
-            <p>A1 level is awarded when any communication task is purchased.</p>
-          </div>
-          <div>
-          <p>Vì tính chất đặc biệt của kỹ năng L-B2-6, nó được miễn phí.</p>
-          <p>Because of the specialized nature of the L-B2-6 skill, it is offered free of charge.</p>
-        </div>
-          <div>
-            <p>(!*): Sẽ có giá khác nhau đối với từng kỹ năng của PSYCHOMOTOR DIMENSION.</p>
-            <p>(!*): Different prices will apply for each skill in the PSYCHOMOTOR DIMENSION.</p>
-          </div>
-        </div>
+
       </div>
     
     </div>
