@@ -60,10 +60,10 @@ p {
   width: fit-content; /* Đặt chiều rộng dựa trên nội dung */
 }
 .btn_submit {
-  background: #226084;
+  background: #77A8E3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X, Y, độ mờ, màu bóng */
   transition: background-color 0.3s ease;
-  border: 1px solid #226084;
+  border: 1px solid #77A8E3;
 }
 .btn_submit:hover {
   border-color: #ccc;
@@ -374,7 +374,7 @@ p {
   justify-content: space-between;
 }
 .nameComm {
-  background-color: #266b94;
+  background-color: #77A8E3;
   color: #fff;
   display: flex;
   align-items: center;
@@ -390,7 +390,7 @@ p {
 .descCommTask {
   padding: 20px;
   border-radius: 0 0 20px 20px;
-  border: 1px solid #266b94;
+  border: 1px solid #77A8E3;
 
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -423,7 +423,7 @@ p {
 }
 
 .descCommTaskEN {
-  color: #266b94 !important;
+  color: #77A8E3 !important;
   margin-bottom: 12px;
   font-weight: 600;
   line-height: 20px;
@@ -454,10 +454,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #266b94;
+  border: 1px solid #77A8E3;
   border-radius: 12px;
   font-weight: bold;
-  color: #266b94;
+  color: #77A8E3;
   font-size: 13px;
 }
 .descNameTotal,
@@ -483,7 +483,7 @@ p {
   height: 38px;
   border-radius: 12px; /* Góc cong 20px cho phần tử */
   overflow: hidden; /* Để giảm các hiệu ứng góc cong khi thêm đường viền cho nút bên trong */
-  background-color: #266b94;
+  background-color: #77A8E3;
   color: #fff;
   display: flex;
   align-items: center;
@@ -493,7 +493,7 @@ p {
   transition: transform 0.3s;
 }
 .btnDetail:hover {
-  background-color: #226084; /* Màu nền khi hover */
+  background-color: #77A8E3; /* Màu nền khi hover */
   transform: translateY(-1px);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); /* Đổ bóng khi hover */
 }
