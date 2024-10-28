@@ -60,10 +60,10 @@ p {
   width: fit-content; /* Đặt chiều rộng dựa trên nội dung */
 }
 .btn_submit {
-  background: #226084;
+  background: #77a8e3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X, Y, độ mờ, màu bóng */
   transition: background-color 0.3s ease;
-  border: 1px solid #226084;
+  border: 1px solid #77a8e3;
 }
 .btn_submit:hover {
   border-color: #ccc;
@@ -346,7 +346,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-auto-rows: 320px; */
-  gap: 40px;
+  gap: 20px;
   /* grid-auto-flow: dense; */
 }
 @media (max-width: 1024px) {
@@ -368,13 +368,14 @@ p {
   }
 }
 
+
 .descCommTask {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .nameComm {
-  background-color: #266b94;
+  background-color: #77a8e3;
   color: #fff;
   display: flex;
   align-items: center;
@@ -383,17 +384,30 @@ p {
   border-radius: 20px 20px 0 0;
 }
 .nameComm p {
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   font-weight: bold;
 }
 .descCommTask {
-  padding: 20px;
+  padding: 20px 13px;
   border-radius: 0 0 20px 20px;
-  border: 1px solid #266b94;
-
+  border: 1px solid #77a8e3;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  height: 230px;
 }
+
+@media (max-width: 768px) {
+  #items .descCommTask {
+    height: 250px;
+  }
+}
+
+@media (max-width: 1250px) {
+  #items .descCommTask {
+    height: 250px;
+  }
+}
+
 .itemCommTask {
   border-radius: 20px;
   transition: transform 0.3s;
@@ -423,17 +437,39 @@ p {
 }
 
 .descCommTaskEN {
-  color: #266b94 !important;
+  color: #77a8e3 !important;
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 16px;
   height: 30px;
+}
+
+@media (max-width: 768px) {
+  #items .descCommTaskEN
+  {
+    font: 14px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1250px) {
+  #items .descCommTaskEN {
+    font-size: 17px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #items .descCommTaskEN {
+    font-size: 17px;
+    height: 30px;
+  }
 }
 
 .descCommTaskVN {
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 20px;
   font-size: 14px;
   height: 30px;
@@ -454,10 +490,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #266b94;
+  border: 1px solid #77a8e3;
   border-radius: 12px;
   font-weight: bold;
-  color: #266b94;
+  color: #77a8e3;
   font-size: 13px;
 }
 .descNameTotal,
@@ -483,7 +519,7 @@ p {
   height: 38px;
   border-radius: 12px; /* Góc cong 20px cho phần tử */
   overflow: hidden; /* Để giảm các hiệu ứng góc cong khi thêm đường viền cho nút bên trong */
-  background-color: #266b94;
+  background-color: #77a8e3;
   color: #fff;
   display: flex;
   align-items: center;
@@ -493,7 +529,7 @@ p {
   transition: transform 0.3s;
 }
 .btnDetail:hover {
-  background-color: #226084; /* Màu nền khi hover */
+  background-color: #77a8e3; /* Màu nền khi hover */
   transform: translateY(-1px);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); /* Đổ bóng khi hover */
 }
@@ -552,6 +588,14 @@ p {
     font-size: 14px;
   }
 }
+
+@media (min-width: 1600px) {
+  #items .nameComm p {
+    padding: 0 10px;
+    font-size: 24px;
+  }
+}
+
 
 /* Detail table */
 .tableDetail {

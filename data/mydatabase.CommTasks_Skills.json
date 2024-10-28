@@ -4,7 +4,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021247"
   },
-  "name": "COMMUNICATION TASK 1",
+  "name": "SKILL MAP 1",
   "desc": "Communicating with Clients/Customers. | Giao tiếp với khách hàng/khách hàng.",
   "Skills": [
     {
@@ -1055,7 +1055,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021248"
   },
-  "name": "COMMUNICATION TASK 2",
+  "name": "SKILL MAP 2",
   "desc": "Collaborating with Coworkers on Project. | Cộng tác với đồng nghiệp trong dự án.",
   "Skills": [
     {
@@ -2294,7 +2294,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021249"
   },
-  "name": "COMMUNICATION TASK 3",
+  "name": "SKILL MAP 3",
   "desc": "Collaborating with External Stakeholders/Partners. | Hợp tác với các bên liên quan/đối tác bên ngoài.",
   "Skills": [
     {
@@ -3708,7 +3708,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e02124a"
   },
-  "name": "COMMUNICATION TASK 4",
+  "name": "SKILL MAP 4",
   "desc": "Conducting meetings and presentations. | Tiến hành các cuộc họp và thuyết trình.",
   "Skills": [
     {
@@ -4886,7 +4886,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e02124b"
   },
-  "name": "COMMUNICATION TASK 5",
+  "name": "SKILL MAP 5",
   "desc": "Sending and Responding to Email. | Gửi và trả lời email.",
   "Skills": [
     {
@@ -5406,7 +5406,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e02124c"
   },
-  "name": "COMMUNICATION TASK 6",
+  "name": "SKILL MAP 6",
   "desc": "Conducting Data Analysis and Reporting. | Phân tích và báo cáo dữ liệu dẫn truyền.",
   "Skills": [
     {
@@ -5713,7 +5713,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e02124d"
   },
-  "name": "COMMUNICATION TASK 7",
+  "name": "SKILL MAP 7",
   "desc": "Creating and delivering presentations. | Tạo và trình bày bài thuyết trình.",
   "Skills": [
     {
@@ -6722,7 +6722,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e02124e"
   },
-  "name": "COMMUNICATION TASK 8",
+  "name": "SKILL MAP 8",
   "desc": "Conducting negotiations with clients or vendors. | Tiến hành đàm phán với khách hàng hoặc nhà cung cấp.",
   "Skills": [
     {
@@ -7835,7 +7835,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e02124f"
   },
-  "name": "COMMUNICATION TASK 9",
+  "name": "SKILL MAP 9",
   "desc": "Delivering training sessions and workshops. | Cung cấp các buổi đào tạo và hội thảo.",
   "Skills": [
     {
@@ -8727,7 +8727,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021250"
   },
-  "name": "COMMUNICATION TASK 10",
+  "name": "SKILL MAP 10",
   "desc": "Engaging in active listening during conversations. | Tích cực lắng nghe trong các cuộc trò chuyện.",
   "Skills": [
     {
@@ -9076,7 +9076,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021251"
   },
-  "name": "COMMUNICATION TASK 11",
+  "name": "SKILL MAP 11",
   "desc": "Participating in brainstorming sessions. | Tham gia các buổi brainstorming.",
   "Skills": [
     {
@@ -10037,7 +10037,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021252"
   },
-  "name": "COMMUNICATION TASK 12",
+  "name": "SKILL MAP 12",
   "desc": "Providing customer service and support. | Cung cấp dịch vụ và hỗ trợ khách hàng.",
   "Skills": [
     {
@@ -10912,7 +10912,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021253"
   },
-  "name": "COMMUNICATION TASK 13",
+  "name": "SKILL MAP 13",
   "desc": "Conducting financial analysis and reporting. | Thực hiện phân tích và báo cáo tài chính.",
   "Skills": [
     {
@@ -11219,7 +11219,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021254"
   },
-  "name": "COMMUNICATION TASK 14",
+  "name": "SKILL MAP 14",
   "desc": "Conduction interviews and hiring processes. | Tiến hành phỏng vấn và quy trình tuyển dụng.",
   "Skills": [
     {
@@ -12528,7 +12528,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021255"
   },
-  "name": "COMMUNICATION TASK 15",
+  "name": "SKILL MAP 15",
   "desc": "Conducting performance evaluations and providing feedback. | Tiến hành đánh giá hiệu suất và cung cấp phản hồi.",
   "Skills": [
     {
@@ -13953,7 +13953,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021256"
   },
-  "name": "COMMUNICATION TASK 16",
+  "name": "SKILL MAP 16",
   "desc": "Conducting quality control and assurance activities. | Thực hiện các hoạt động kiểm soát và đảm bảo chất lượng.",
   "Skills": [
     {
@@ -15058,7 +15058,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021257"
   },
-  "name": "COMMUNICATION TASK 17",
+  "name": "SKILL MAP 17",
   "desc": "Conducting research and gathering information. | Tiến hành nghiên cứu và thu thập thông tin.",
   "Skills": [
     {
@@ -15645,7 +15645,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021258"
   },
-  "name": "COMMUNICATION TASK 18",
+  "name": "SKILL MAP 18",
   "desc": "Facilitating effective communication between team members. | Tạo điều kiện giao tiếp hiệu quả giữa các thành viên trong nhóm.",
   "Skills": [
     {
@@ -16542,7 +16542,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e021259"
   },
-  "name": "COMMUNICATION TASK 19",
+  "name": "SKILL MAP 19",
   "desc": "Participating in team-building activities. | Tham gia các hoạt động teambuilding.",
   "Skills": [
     {
@@ -17458,7 +17458,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e02125a"
   },
-  "name": "COMMUNICATION TASK 20",
+  "name": "SKILL MAP 20",
   "desc": "Writing and distributing internal communications, such as memos of newsletters. | Viết và phân phối các thông tin liên lạc nội bộ, chẳng hạn như bản ghi nhớ các bản tin.",
   "Skills": [
     {
@@ -17639,7 +17639,7 @@
   "_id": {
     "$oid": "659a3b8e350a38ec3e02125b"
   },
-  "name": "COMMUNICATION TASK 21",
+  "name": "SKILL MAP 21",
   "desc": "Writing and editing documents. | Viết và biên tập tài liệu.",
   "Skills": [
     {

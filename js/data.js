@@ -4,7 +4,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021247"
     },
-    "name": "Communication task 1",
+    "name": "Skill map 1",
     "desc_en": "Communicating with Clients/Customers.",
     "desc_vi": "Giao tiếp với khách hàng.",
     "Skills": [
@@ -1056,7 +1056,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021248"
     },
-    "name": "Communication task 2",
+    "name": "Skill map 2",
     "desc_en": "Collaborating with Coworkers on Project.",
     "desc_vi": "Cộng tác với đồng nghiệp trong dự án.",
 
@@ -2297,7 +2297,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021249"
     },
-    "name": "Communication task 3",
+    "name": "Skill map 3",
     "desc_en": "Collaborating with External Stakeholders/Partners.",
     "desc_vi": "Hợp tác với các bên liên quan/đối tác bên ngoài.",
 
@@ -3713,7 +3713,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124a"
     },
-    "name": "Communication task 4",
+    "name": "Skill map 4",
     "desc_en": "Conducting meetings and presentations.",
     "desc_vi": "Tiến hành các cuộc họp và thuyết trình.",
 
@@ -4893,7 +4893,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124b"
     },
-    "name": "Communication task 5",
+    "name": "Skill map 5",
     "desc_en": "Sending and Responding to Email.",
     "desc_vi": "Gửi và trả lời email.",
 
@@ -5415,7 +5415,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124c"
     },
-    "name": "Communication task 6",
+    "name": "Skill map 6",
     "desc_en": "Conducting Data Analysis and Reporting.",
     "desc_vi": "Thực hiện phân tích dữ liệu và báo cáo.",
 
@@ -5724,7 +5724,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124d"
     },
-    "name": "Communication task 7",
+    "name": "Skill map 7",
     "desc_en": "Creating and delivering presentations.",
     "desc_vi": "Tạo và trình bày bài thuyết trình.",
 
@@ -6735,7 +6735,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124e"
     },
-    "name": "Communication task 8",
+    "name": "Skill map 8",
     "desc_en": "Conducting negotiations with clients or vendors.",
     "desc_vi": "Tiến hành đàm phán với khách hàng hoặc nhà cung cấp.",
 
@@ -7850,7 +7850,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02124f"
     },
-    "name": "Communication task 9",
+    "name": "Skill map 9",
     "desc_en": "Delivering training sessions and workshops.",
     "desc_vi": "Cung cấp các buổi đào tạo và hội thảo.",
 
@@ -8744,7 +8744,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021250"
     },
-    "name": "Communication task 10",
+    "name": "Skill map 10",
     "desc_en": "Engaging in active listening during conversations.",
     "desc_vi": "Tích cực lắng nghe trong các cuộc trò chuyện.",
 
@@ -9095,7 +9095,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021251"
     },
-    "name": "Communication task 11",
+    "name": "Skill map 11",
     "desc_en": "Participating in brainstorming sessions.",
     "desc_vi": "Tham gia các buổi brainstorming.",
 
@@ -10058,7 +10058,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021252"
     },
-    "name": "Communication task 12",
+    "name": "Skill map 12",
     "desc_en": "Providing customer service and support.",
     "desc_vi": "Cung cấp dịch vụ và hỗ trợ khách hàng.",
 
@@ -10935,7 +10935,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021253"
     },
-    "name": "Communication task 13",
+    "name": "Skill map 13",
     "desc_en": "Conducting financial analysis and reporting.",
     "desc_vi": "Thực hiện phân tích và báo cáo tài chính.",
 
@@ -11244,7 +11244,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021254"
     },
-    "name": "Communication task 14",
+    "name": "Skill map 14",
     "desc_en": "Conduction interviews and hiring processes.",
     "desc_vi": "Tiến hành phỏng vấn và quy trình tuyển dụng.",
 
@@ -12555,7 +12555,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021255"
     },
-    "name": "Communication task 15",
+    "name": "Skill map 15",
     "desc_en": "Conducting performance evaluations and providing feedback.",
     "desc_vi": "Tiến hành đánh giá hiệu suất và cung cấp phản hồi.",
 
@@ -13982,7 +13982,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021256"
     },
-    "name": "Communication task 16",
+    "name": "Skill map 16",
     "desc_en": "Conducting quality control and assurance activities.",
     "desc_vi": "Thực hiện các hoạt động kiểm soát và đảm bảo chất lượng.",
 
@@ -15089,7 +15089,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021257"
     },
-    "name": "Communication task 17",
+    "name": "Skill map 17",
     "desc_en": "Conducting research and gathering information.",
     "desc_vi": "Tiến hành nghiên cứu và thu thập thông tin.",
 
@@ -15678,7 +15678,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021258"
     },
-    "name": "Communication task 18",
+    "name": "Skill map 18",
     "desc_en": "Facilitating effective communication between team members.",
     "desc_vi": "Tạo điều kiện giao tiếp hiệu quả giữa các thành viên trong nhóm.",
 
@@ -16577,7 +16577,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e021259"
     },
-    "name": "Communication task 19",
+    "name": "Skill map 19",
     "desc_en": "Participating in team-building activities.",
     "desc_vi": "Tham gia các hoạt động teambuilding.",
 
@@ -17495,7 +17495,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02125a"
     },
-    "name": "Communication task 20",
+    "name": "Skill map 20",
     "desc_en": "Writing and distributing internal communications, such as memos of newsletters.",
     "desc_vi": "Viết và phân phối các thông tin liên lạc nội bộ, chẳng hạn như bản ghi nhớ các bản tin.",
 
@@ -17678,7 +17678,7 @@ var data = {
     "_id": {
       "$oid": "659a3b8e350a38ec3e02125b"
     },
-    "name": "Communication task 21",
+    "name": "Skill map 21",
     "desc_en": "Writing and editing documents.",
     "desc_vi": "Viết và biên tập tài liệu.",
 
